@@ -1,0 +1,820 @@
+
+
+========== PAGE 95 ==========
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Indeed, this chapter concludes not with a warning 
+but with a call to action. As countries begin to 
+measure the full extent of their exposure, not just in 
+buildings and roads, but also in ecosystems, health 
+systems, and household wellbeing, the economic 
+rationale for investing in disaster resilience 
+becomes unassailable. Resilience is not just a moral 
+imperative. It is one of the smartest investments a 
+country can make. 
+Tools like probabilistic risk models can help to 
+estimate future losses better and plan for them. So 
+the second part of the chapter looks at how forward-
+looking tools like Average Annual Loss (AAL) and 
+probable maximal loss (PML) metrics smooth 
+out short-term volatility and can help capture the 
+Five hazards drive over 95% of 
+economic losses 
+Between 1970 and 2023, the economic cost of 
+geophysical disasters like earthquakes accounted 
+for an estimated $1.59 trillion.
+2 The direct impacts 
+of some 24,433 reports of floods, storms, droughts 
+and extreme heat worldwide led to more than $5.18 
+trillion in economic losses, while other disasters 
+totalled an additional $0.10 trillion.
+3 Although floods 
+were the most frequent weather-related disaster, 
+storms resulted in the highest human and economic 
+losses. Three of the ten most costly climate-related 
+disasters in the past 50 years were hurricanes: 
+Hurricanes Harvey ($96.9 billion), Maria ($69.4 
+billion) and Irma ($58.2 billion), all occurring in 2017. 
+These three hurricanes alone accounted for 35% of 
+the total economic losses from the top 10 global 
+disasters from 1970 to 2019.
+4 
+As outlined in Chapter 2, hazards like floods and 
+earthquakes can also trigger compound disasters, 
+such as landslides in mountainous areas, which 
+have associated average annual economic losses 
+estimated to be $26 billion globally.
+5 
+Droughts also constituted a major economic burden. 
+Based on historical data, recent estimates suggest 
+that their impacts cost approximately $307 billion 
+annually.
+6 These losses, as estimated by the United 
+impact of low-probability, high-impact events like 
+major earthquakes. By offering an annualized view 
+of expected losses, AAL equips governments, 
+insurers and communities with a tool to help make 
+informed decisions about where and how to invest 
+in risk reduction. Current AAL calculations for three 
+hazards, floods, tropical cyclones and earthquakes, 
+put losses to critical infrastructure alone at over 
+$250 billion a year, with 
+---
+
+
+========== PAGE 96 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+“The missing millions”: What direct 
+disaster cost estimates leave out 
+Looking only at the ‘big five’ hazards (earthquakes, 
+floods, storms, drought and extreme heat) does not 
+capture the scale of disaster-related losses. In 2023, 
+those five hazards accounted for direct economic 
+costs of over $195.7 billion, or approximately 
+0.15% of global GDP .
+11 However, much of what 
+is lost during and after a disaster, in livelihoods 
+disrupted, degraded ecosystems or lives derailed 
+by displacement or long-term health impacts, is not 
+counted. 
+Once cascading costs are considered, the estimated 
+indirect economic impact of disasters in 2023 
+climbs to roughly $2.3 trillion or 2% of global GDP . 
+While these figures remain estimates, the key 
+message is that disasters can have outsized and 
+multiplying impacts on economies, so policy choices 
+and investment patterns to reduce the risk of hazard 
+impacts (including climate change) matter. 
+For example, the indirect impacts of extreme heat 
+not only disrupt everyday life but also lead to long-
+term economic and social costs.
+12 Extreme heat 
+events in Europe contributed an extra $2.8 billion in 
+annual losses due to increased hospital admissions 
+and diminished labour productivity.
+13 Extreme heat 
+increases energy demand, reduces work productivity 
+and strains healthcare systems due to a rise in heat-
+related illnesses.
+14 In urban areas, extreme heat 
+events cause maintenance and repair costs to surge 
+by 12–15%, resulting in an extra cost burden of about 
+$4.5 billion annually in major cities, posing significant 
+challenges for sustainable urban planning.
+15 
+Zooming in on the agriculture sector, the past 30 
+years have seen an estimated loss of $3.8 trillion 
+in crops and livestock production due to disaster 
+events, translating to an average annual loss of $123 
+billion per year, or 5% of global agricultural GDP .
+16 
+Understanding the scale of the unreported losses 
+The charts below give a sense of the scale of 
+these differences. In Figure 26a, the lowest tier 
+shows the direct economic losses from disasters.
+17 
+The subsequent bars show additional losses as 
+accounted for across other sectors and ecosystems, 
+including many of the wide-ranging social and 
+planetary impacts discussed earlier in this report. 
+These include, for example, the costs of human 
+displacement, ecosystem losses, estimated sea 
+level risk and other disaster and climate change 
+related costs as reporte
+---
+
+
+========== PAGE 109 ==========
+ 
+   
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Policymakers must recognize the importance of risk 
+reduction in their fiscal policies. With more intense 
+and frequent disasters projected in the future, credit 
+agencies, insurance companies and other financial 
+actors are increasingly likely to place a premium on 
+preparedness and risk reduction. Those countries 
+with clear strategies in place may enjoy stronger 
+credit ratings. 
+As discussed in more detail in Chapter 6, tools 
+exist that can account for a government’s efforts to 
+adapt to climate change and wider disaster risks. 
+Increasingly, proactive fiscal planning and proof of 
+resilience investments may help prevent potential 
+sovereign downgrades. This could benefit emerging 
+and developing economies, vulnerable to climate 
+risks and burdened with high debt levels.
+28 
+Using probabilities to combat volatility 
+Looking at the past is not enough to prepare for the 
+future. Disaster losses vary wildly from year to year, 
+and that volatility can make it harder to plan. Risk 
+experts are, therefore, turning to tools that look at 
+both the past and the future by simulating thousands 
+of possible scenarios to help governments anticipate 
+impacts before they occur.
+29 Probabilistic models 
+help to do this by providing insights into average 
+annual losses (AAL) and probable maximum losses 
+(PML) and looking beyond annual fluctuations to 
+assess the impact of 1-in-100 or even 1-in-1000-year 
+low-probability and high-impact catastrophic events. 
+In short, such tools offer a way to see the financial 
+stakes of future disasters more clearly before the 
+worst happens. 
+As outlined in more detail below, there are still gaps 
+in the coverage and content in this emerging field. 
+However, All and PML-based analytics can be a 
+powerful tool for policymakers, central banks and 
+investors to understand the human and financial 
+impacts of disasters on societies and economies. 
+Innovations in areas such as machine learning and 
+artificial intelligence are accelerating the pace of this 
+work to provide policymakers with better tools to 
+manage the social and fiscal risks of disasters. These 
+methods are also being applied to wider sectors 
+such as agriculture, ecosystem service losses and 
+migration costs. They are also being extended to 
+better understand hazards such as wildfires and 
+multi-hazard losses. These exciting developments 
+offer the possibility to expand significantly current 
+knowledge on the true scale and nature of disaster 
+ris
+---
+
+
+========== PAGE 122 ==========
+  
+ 
+ 
+ 
+ 
+Drought and extreme heat 
+Remarkably, despite their significant and growing 
+impacts, studies have provided estimates for 
+specific sectors, but robust cross-sectoral AAL 
+estimates for drought and extreme heat are still 
+missing. For instance, recent research by the United 
+Nations Convention to Combat Desertification 
+(UNCDD) on droughts highlights how they weaken 
+agricultural production, reduce water availability and 
+compromise the resilience of natural ecosystems, 
+New ways to model the costs of the 
+missing millions 
+As the gap in drought analysis above attests, AAL 
+calculations are only applied systematically to a 
+small subset of hazard types. Their analysis also 
+tends to focus on calculating losses to infrastructure, 
+such as public assets and critical public assets such 
+as roads, schools and health facilities. This risks 
+overlooking many hazards, such as wildfires and 
+the complex and wide-ranging ways these impacts 
+are felt, and growing in significance due to climate 
+change. 
+The increasing economic impact of wildfires 
+Over the past decade, global insured wildfire 
+losses have far surpassed previous records. 
+Although wildfires in the United States (particularly 
+California) make up most of the losses, wildfires in 
+Canada, Australia and Europe have also contributed 
+significantly. 
+affecting the livelihood of more than 1.8 billion 
+people annually.
+44 Initial work has been done by 
+CDRI to estimate the AAL of drought on the hydro-
+power sector, suggesting that roughly 12.9% of 
+average hydro-power production (the equivalent of 
+135.3 TWh/h of electricity) was impacted.
+45 Similar 
+estimates for other drought-sensitive sectors would 
+help countries design better risk reduction policies 
+and investments. 
+Due to intense development and high value of 
+property in wildfire-exposed areas, the United States 
+is the most economically exposed country to this 
+hazard. Indeed, 9 of the 10 most expensive wildfire 
+events since 1970 occurred in the United States 
+(not yet accounting for the devastating January 
+2025 California wildfires). From 2014 to 2023, 
+wildfires globally cost approximately $106 billion in 
+economic losses and $74 billion in insured losses, 
+significantly higher than losses in the decade before 
+(Figure 36).
+46 Increasing wildfire losses for insurers 
+have caused some to curtail property coverage 
+in heavily impacted areas. This concerning trend 
+will be discussed in more detail in Chapter 6 of 
+this report. Develop
+---
+
+
+========== PAGE 133 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+Map 31. Total impact of climate-related hazards on household income growth by region by 2050 
+Source: Kotz, M., Levermann, A. & Wenz, L. 
+The economic commitment of climate change. 
+Nature 628, 551–557 (2024). The boundaries and names shown and the designations used on this map 
+do not imply official endorsement or acceptance by the United Nations. https://doi.org/10.1038/s41586-024-07219-0 
+As with many other aspects of disaster risk reduction, 
+collaboration and risk understanding are key. 
+Foresight must combine quantitative and qualitative 
+techniques, and understanding future risk requires 
+interdisciplinary collaboration between physical 
+scientists, economists and other social scientists. 
+Drawing on the skills of local knowledge holders is 
+essential, but so is engaging the forward-thinking 
+skills of economists, actuaries and insurance risk 
+modellers. Public-private dialogue and collaboration 
+are key. Currently, these disciplines are often 
+disconnected, creating barriers to understanding the 
+economic and broader impacts of climate change 
+and other future risks.
+1 
+Planning for the future must become a routine part 
+of planning across sectors. For example, with the 
+support of the United Nations Office for Disaster 
+Risk Reduction (UNDRR), the United Nations 
+system is taking steps to strengthen its use of risk 
+analysis to anticipate future risks when designing 
+and implementing development programmes. 
+Using publicly available data, a comprehensive risk 
+analysis looking at the evolution of priority hazards, 
+exposure, vulnerability, and short- and longer-
+term scenarios, is developed and applied against 
+the Sustainable Development Goals (SDGS). The 
+analysis is jointly validated with partners, and the 
+scenarios are expanded using collaborative foresight 
+methodologies. Increasingly, this process is carried 
+out collaboratively across the humanitarian-
+development and peace nexus.
+2 
+Future risk and the costliest hazards up 
+to 2050  
+Currently, 95% of losses from recorded economic 
+disasters are due to one of the “big five” hazards: 
+earthquakes, floods, storms, droughts and extreme 
+heat.
+3 As a result of climate change and other 
+factors, the frequency and intensity of these events 
+are growing for climate hazards. What qualifies as 
+a 1-in-100-year hazard event in 2050 will be more 
+intense than a similar return period event today.   
+118 
+---
+
+
+========== PAGE 165 ==========
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+Recommendations for action 
+Risks can be transformed into opportunities through 
+investments in resilience building. At present, 
+however, while resilient investments can yield 
+considerable benefits, often repaying their upfront 
+costs many times over, private sector adaptation 
+and resilience investment and official development 
+assistance (ODA) funding remain insufficient, 
+particularly in developing countries. 
+Given the potential costs of inaction, the stakes could 
+not be higher. A growing body of research clarifies 
+that disaster losses are already considerably larger 
+than the costs of disaster risk reduction.
+57 This is 
+particularly true once the potential compounding 
+economic benefits of disaster risk reduction and 
+climate change adaptation are factored in. For 
+example, long-term savings from investment in 
+resilience and coping mechanisms can reach 300% 
+for droughts and 1,200% for storms in sub-Saharan 
+Africa.
+58 These substantial benefits are often 
+recorded against programs like installing disaster 
+preparedness and public health measures with low 
+costs and high benefits. High benefits are also found 
+in contexts where adaptation involves marginal 
+shifts in production, such as when farmers switch 
+crops or when improvements in building design 
+Figure 48. International Development Cooperation 
+Total Official Development Assistance (ODA) 
+help prevent the collapse of infrastructure.58 Indeed, 
+some sectoral studies report benefit-cost ratios of 
+between 100% and 900% for climate adaptation 
+measures.
+59 
+To succeed, however, adequate investment in 
+resilience is needed at scale. At present, however, 
+there remains a considerable funding gap in 
+translating disaster resilience policies into concrete 
+actions, evident even within the climate change 
+adaptation community. For instance, a recent 
+survey of selected National Adaptation Plans found 
+that around half had failed to cost the financial 
+outlay required to implement them adequately.
+60 
+This reflects a wider global mismatch between the 
+adaptation financing levels needed and what is 
+available, particularly in low-income countries. 
+Between 2019 and 2023, about 1% of total ODA 
+was officially categorized as disaster risk reduction, 
+prevention, and preparedness. Looking exclusively 
+at the humanitarian sector, disaster prevention and 
+preparedness accounted for only about 3.3% of 
+humanitarian aid for 2019-2023, down from 3.6% 
+for 2015-2018. Even whe
+---
+
+
+========== PAGE 172 ==========
+ 
+ 
+ 
+ 
+  
+ 
+CHAPTER 6 
+Investing in resilience for 
+economic stability 
+There is a stark mismatch between the increasing levels of global disaster risk 
+detailed in previous chapters of this report and current investment in resilience. 
+Disasters already exert a substantial macroeconomic toll, from weather-related 
+events such as floods, storms, drought an d extreme heat to major hazards like 
+earthquakes. The toll is expected to rise sharply as such events become more 
+frequent and severe.
+1 Without urgent action to close the gap between risk and 
+investment, the financial and economic consequences will become increasingly 
+difficult to manage. 
+When disasters occur repeatedly, economic growth often slows and debt 
+increases. Developing countries, particularly small island developing states 
+(SIDS) and least developed countries (LDCs), face the dual challenge of higher 
+exposure to hazard risk and limited access to resources for risk reduction. 
+In such situations, it becomes increasingly expensive to insure or otherwise 
+transfer risk, and more money is spent on humanitarian responses when 
+disasters are not prevented. This high cost is not inevitable. To create a more 
+stable investment climate, governments, multilateral institutions, the private 
+sector and households must rethink and realign their investments to better 
+protect current and future assets. A clear, integrated risk financing approach can 
+help address these challenges and open a pathway toward long-term financial 
+and economic stability. 
+This chapter presents three interconnected negative feedback loops, or “spirals”, 
+that illustrate how disaster risk can destabilize economies, contributing to 
+declining incomes, rising debt, unsustainable risk transfer and repeated cycles 
+of response and recovery. These unsustainable development spirals feed into 
+one another, meaning that failure to address one can intensify vulnerabilities 
+elsewhere. 
+159 
+---
+
+
+========== PAGE 175 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+companies are forced to reduce their investments 
+in growth. This, along with redirecting government 
+funds to provide urgent emergency relief, can 
+cause the overall economy to shrink. Since GDP 
+is essentially the sum of what consumers spend, 
+businesses invest and governments fund, and the 
+trade balance, these reductions often add up to a 
+lower GDP . 
+This is most visible in smaller economies, like 
+those of SIDS and LDCs, where disaster losses 
+can represent a significant share of GDP , limiting 
+growth and recovery potential. Overall, the aggregate 
+income losses could be substantial. As outlined in 
+the previous chapter, recent models suggest that 
+by 2050, global incomes could decline by 19% on 
+average due to climate-related hazards, with lower-
+income countries suffering disproportionately.
+3 
+Major or frequent disasters can disrupt the 
+balance between income and spending, making it 
+harder for governments to adhere to fiscal rules. 
+This disruption can undermine productivity and 
+output, affecting countries’ sovereign risk (Figure 
+53). Improper pricing, when the risks associated 
+with disasters and climate change are not 
+adequately reflected in sovereign credit ratings, 
+can lead to misalignment if the sovereign debt 
+deteriorates due to the impacts of climate change.
+4 
+Corporate credit ratings must also account for 
+disaster and climate risks to ensure an accurate 
+assessment of financial stability and encourage 
+consideration of resilience measures. 
+Figure 53. Disaster and sovereign risk: Key investment impacts pathways 
+Source: Adapted from Agarwala et al., 2024 
+Improper pricing and unmanageable disaster-related 
+economic losses can drive indirect impacts such as 
+sovereign credit downgrades, significantly raising 
+borrowing costs for affected nations. As credit 
+ratings fall, the price of money not only increases 
+for “riskier” countries’ governments but also private 
+borrowers in international markets, leading to higher 
+interest payments on public and private debt, often 
+by a significant amount, as evidenced by the example 
+of Thailand outlined below (Box 29). Such trends are 
+also of concern in regions beyond Asia. For example, 
+recent projections have estimated that a 2.5-notch 
+credit rating downgrade for Jamaica could increase 
+annual debt servicing costs by $270 million.
+5 
+Arguably, these impacts are already starting to be 
+considered. As shown on Map 45, a 2023 analysis 
+of 109 countries suggests that by 2030, ne
+---
+
+
+========== PAGE 205 ==========
+  
+ 
+ 
+ 
+    
+  
+ 
+At the global level 
+International organizations can strengthen national 
+efforts by providing pre-arranged funding tied to 
+early warning systems, ensuring resources reach 
+high-risk communities before a disaster strikes. This 
+addresses the limitation of national governments 
+that may lack sufficient resources or capacity for 
+proactive measures, and is more cost-effective 
+than traditional humanitarian relief. Additionally, the 
+international system can help free up fiscal space for 
+anticipatory action by promoting debt-for-resilience 
+swaps, as described earlier. The international 
+community can contribute to countries shifting 
+to proactive disaster management by working 
+collaboratively. The example of the donor-funded 
+Pacific Catastrophe Risk Insurance Company and its 
+parametric drought insurance model showcases the 
+role that international development assistance can 
+play in reducing risk to manageable levels 41). 
+In conclusion, breaking the response-repeat 
+cycle requires integrated forward-looking policies 
+and financial mechanisms to shift from costly 
+emergency relief to proactive risk reduction. While 
+social protection programs can stabilize household 
+incomes, reducing long-term vulnerability, 
+anticipatory finance ensures rapid funding for early 
+action, helping prevent disasters from escalating. 
+Finally, contingent financing and fiscal buffers 
+secure pre-arranged funds, enabling an immediate 
+response. Together, these approaches can ensure 
+timely action before disasters strike and financial 
+stability after they occur, helping countries protect 
+livelihoods, reduce recovery costs and strengthen 
+long-term economic resilience against future 
+shocks. 
+Box 41. Strengthening disaster preparedness and response to drought in the Pacific through 
+parametric insurance 
+The Pacific region experiences variable rainfall, leading to both droughts and flooding. The vulnerability of 
+islands varies considerably due to differing water storage: in the context of drought, the higher islands typically 
+have natural water storage systems such as rivers, streams and aquifers, while the lower-lying islands depend 
+solely on rainfall and shallow aquifers for their supply. This variation in hydrology makes the region’s vulnerability 
+to drought highly dependent on geographic location and island type. 
+In this context, the Pacific Catastrophe Risk Insurance Company launched a parametric drought insurance 
+in 2022 with a dual-trigger desi
+---
+
+
+========== PAGE 210 ==========
+  
+ 
+CHAPTER 7 
+Conclusion: Resilience Pays 
+Disaster risk is increasing as more frequent and intense hazard 
+events, unsafe urbanization and ineffective development put 
+more people and assets in harm’s way. Disasters have profound 
+macroeconomic impacts, with direct losses estimated at 
+$202 billion and indirect losses nearing $2.3 trillion annually. 
+Current investment patterns fuel spirals that increase debt 
+and decrease income, foster uninsurability and perpetuate an 
+expensive dependence on humanitarian assistance. Disasters 
+are also increasingly associated with credit rating downgrades. 
+Action is essential to protect societies, property values and 
+wider financial and insurance systems. 
+197 
+---
+
+
+========== PAGE 215 ==========
+202 
+ 
+  
+  
+  
+  
+   
+  
+  
+   
+    
+  
+  
+  
+    
+  
+  
+  
+  
+   
+    
+    
+  
+  
+  
+  
+  
+  
+ 
+Abbreviations 
+and acronyms 
+AA Anticipatory Action 
+AAEC Average Annual Embodied Carbon 
+AAL Annual Average Loss 
+AI Artificial intelligence 
+ARC African Risk Capacity 
+ASEAN Association of Southeast Asian Nations 
+ASIS Agricultural Stress Index System 
+AUD Australian Dollar 
+BBC British Broadcasting Corporation 
+BCCR Central Bank of Costa Rica 
+BCR Benefit-Cost Ratio 
+BdF Banque de France 
+BERLAC Capacity Building for Disaster Risk Reduction in the Built Environment 
+in Latin America and the Caribbean project 
+BN Billion (109) 
+BSC Balanced Scorecard 
+°C Degrees Celsius 
+CAD Canadian Dollar 
+CAR Capital Adequacy Ratio 
+CBI Climate Bonds Initiative 
+CCA Climate Change Adaptation 
+CCH WHO Team Climate Change and Health 
+CCRIF Caribbean Catastrophe Risk Insurance Facility 
+CDR Carbon Dioxide Removal 
+CDRI Coalition for Disaster Resilient Infrastructure 
+COP Conference of the Parties 
+COVID-19 Coronavirus Disease 2019 
+
+---
+
+
+========== PAGE 218 ==========
+  
+  
+  
+  
+  
+   
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+    
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  
+IVR Impacts, Vulnerability and Risks 
+JICA Japan International Cooperation Agency 
+Kg/m2 Kilograms per square meter 
+LDCs Least Developed Countries 
+LIDAR Light Detection and Ranging 
+LIC Low-Income Country 
+LL Lessons Learned 
+LLDCs Landlocked Developing Countries 
+LLP Limited Liability Partnership 
+LMICs Low- and Middle-Income Countries 
+LRAs Local Resilience Agents 
+M&E Monitoring and Evaluation 
+MDR Mortality Disaster Risk 
+MHEWS Multi-Hazard Early Warning System 
+MMI Max intensity 
+Mw Moment magnitude of earthquakes size 
+MODIS Moderate Resolution Imaging Spectroradiometer 
+NAP National Adaptation Plan 
+NASA National Aeronautics and Space Administration 
+NDCs Nationally Determined Contributions 
+NDRRMC National Disaster Risk Reduction Management Council of the Philippines 
+NGFS Network of Central Banks and Supervisors for Greening the Financial System 
+NTL Night-Time Lights 
+nVAR Nature Value at Risk 
+NW Net Worth 
+OCHA UN Office for the Coordination of Humanitarian Affairs 
+ODA Official Development Assistance 
+OECD Organisation for Economic Co-operation and Development 
+PAF Pre-Arranged Financing 
+PCRIC Pacific Catastrophe Risk Insurance Company 
+PDC Pyroclastic Density Current 
+205 
+---
+
+
+========== PAGE 220 ==========
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+    
+  
+  
+UNHCR UN High Commissioner for Refugees 
+UNICEF UN Children’s Fund 
+UNSCDF UN Sustainable Development Cooperation Framework 
+US United States of America 
+USD United States Dollar 
+USGS United States Geological Survey 
+VAT Value-Added Tax 
+WASH Water, Sanitation and Hygiene 
+WFP World Food Programme 
+WHO World Health Organization 
+WMO World Meteorological Organization 
+YLD Years Lived with Disability 
+YLL Years of Life Lost 
+207 
+---
+
+
+========== PAGE 225 ==========
+ 
+ 
+Bibliography 
+Chapter 2 
+ACAPS. 2024. “Chad: Impact of Floods.” Briefing 
+Note. Chad, Africa: ACAPS. https://www.acaps.org/ 
+fileadmin/Data_Product/Main_media/20241031_ 
+ACAPS_Chad_-_Impact_of_floods__.pdf. 
+Bernhofen, Mark V, Faye Blenkin, and Mark A 
+Trigg. 2023. “Unknown Risk: Assessing Refugee 
+Camp Flood Risk in Ethiopia.” Environmental 
+Research Letters 18 (6): 064041. https://doi. 
+org/10.1088/1748-9326/acd8d0. 
+Buechner, Maryanne. 2024. “UNICEF Supports 
+Families Hit by Severe Flooding in West and Central 
+Africa.” UNICEF USA. April 10, 2024. https://www. 
+unicefusa.org/stories/unicef-supports-families-hit-
+severe-flooding-west-and-central-africa. 
+Cassidy, Michael, and Lara Mani. 2022. “Huge 
+Volcanic Eruptions: Time to Prepare.” Nature 608 
+(7923): 469–71. https://doi.org/10.1038/d41586-
+022-02177-x. 
+Cole‐Dai, Jihong, David Ferris, Alyson Lanciki, Joël 
+Savarino, Mélanie Baroni, and Mark H. Thiemens. 
+2009. “Cold Decade (AD 1810–1819) Caused by 
+Tambora (1815) and Another (1809) Stratospheric 
+Volcanic Eruption.” Geophysical Research 
+Letters 36 (22): 2009GL040882. https://doi. 
+org/10.1029/2009GL040882. 
+Davis, Peter E. D., Keith W. Nicholls, David M. Holland, 
+Britney E. Schmidt, Peter Washam, Kiya L. Riverman, 
+Robert J. Arthern, et al. 2023. “Suppressed Basal 
+Melting in the Eastern Thwaites Glacier Grounding 
+Zone.” Nature 614 (7948): 479–85. https://doi. 
+org/10.1038/s41586-022-05586-0. 
+FAO. 2024. “West and Central Africa: Floods - Urgent 
+Call for Assistance (October 2024–May 2025) -
+Chad.” https://reliefweb.int/report/chad/west-and-
+central-africa-floods-urgent-call-assistance-october-
+2024-may-2025. 
+Hallegatte, Stephane, Jun Rentschler, and 
+Julie Rozenberg. 2019. Lifelines: The Resilient 
+Infrastructure Opportunity. Washington, DC: World 
+Bank. https://doi.org/10.1596/978-1-4648-1430-3. 
+Hawker, Laurence, Mark A Trigg, Andrew 
+Kruczkiewicz, Mark Bernhofen, Luckson Katsi, Ruby 
+Paterson, Linda Speight, Jamon Van Den Hoek, and 
+Nancy Balfour. 2025. “Data, Guidelines and Ethics 
+for Managing Flood Risk When People Are Already 
+Forcibly Displaced.” Environmental Research Letters 
+20 (1): 011001. https://doi.org/10.1088/1748-9326/ 
+ad9e06. 
+IDMC. 2024. “Global Report on Internal 
+Displacement.” IDMC, NRC. https://www.internal-
+displacement.org/global-report/grid2024/. 
+IFRC. 2022. “Emergency Plan of Action (EPoA) 
+DREF N° MDRTD021.” Humanitarian MDRTD021. 
+Emergency Plan of Action (EPoA). Chad: IFCR. 
+https://reliefweb.int/report/chad
+---

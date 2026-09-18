@@ -1,0 +1,361 @@
+===== CONCLUSION & RECOMMENDATIONS (pages 211-214) =====
+
+========== PAGE 211 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+All countries suffer. Human impacts are more 
+acute in the global south, but economic losses and 
+uninsurability are growing fastest in more developed 
+countries. The world cannot afford this waste when 
+so many of these losses are preventable. Just as 
+total disaster costs have been underestimated, so 
+have the benefits of disaster risk reduction in both 
+1. Democratize risk understanding 
+Quality risk information aligned to local realities is 
+fundamental to directing investment effectively to 
+prevent, reduce and manage risk. Risk information 
+must be standardized, accessible, comparable, and, 
+as much as possible, open source. Most of all, it must 
+be global. All countries and markets suffer when risk 
+knowledge is sold only to the highest bidder. 
+While hazard information is improving globally, 
+governments must do a better job of connecting this 
+to exposure and vulnerability data to better pinpoint 
+risk. As outlined in Chapter 4, doing so can make pro-
+poor investments more effective, accelerate disaster 
+recovery and protect infrastructure. 
+Equally important, both the public and private sectors 
+need access to robust risk information and accurate 
+analysis of their likely average annual losses, and, 
+developed and developing countries. GAR 2025 
+highlights dozens of examples where smarter, more 
+risk-informed investments reduce or even prevent 
+disaster losses despite the stark realities of a 
+volatile climate future. It clarifies that managing risk 
+for the 21st century requires action in six key areas 
+as outlined below. 
+in larger events, their probable maximum losses. 
+This data must be usable by governments, financial 
+markets, central banks and disaster managers. 
+Metrics must be tailored to local realities and meet 
+the needs of a wide range of stakeholders, such as 
+central and local governments and project planners. 
+Tailored metrics can enable financial decision 
+makers to begin prioritizing risk reduction actions by 
+geographic area and by key hazards over the medium 
+to long term. Risk metrics should be complemented 
+by resilience indicators, making the benefits of 
+investing in resilience clearer and easier to integrate 
+into decisions. Harnessing local knowledge and 
+technological advances in machine learning and 
+the appropriate use of artificial intelligence can 
+accelerate trend analysis and the application of new 
+insights into risk. 
+2. Use public financing and regulation to break the risk-creation addiction 
+Physical disaster risks must be monitored and 
+managed like any other potential risk to the financial 
+system. What is often seen as unpredictable 
+volatility, or even uncertainty, can be distilled into 
+probabilities and expected losses to be managed 
+and budgeted. Governments have a role in setting 
+guardrails, spreading learning, and improving access 
+to quality risk data. Metrics and taxonomies exist 
+that can be enhanced to increase their coverage and 
+quality through public-private collaborations and 
+standard setting, as UNDRR has already been doing 
+with key partners. 
+Governments can lead by making disaster risk 
+financing strategies fit for the future core to their 
+operations. These strategies must interlock three 
+elements: risk reduction, risk transfer and improved 
+risk management. These strategies must be based 
+on quality risk information tailored to a country’s 
+specific exposure, vulnerability and hazard profile.  
+When that is done, the evidence clearly shows that 
+resilience pays. It saves lives and reduces the scale 
+of humanitarian catastrophes. Even small, relatively 
+low-cost actions, such as accelerating post-disaster 
+recovery support to households, can yield lasting 
+benefits by stabilizing domestic incomes and 
+helping small businesses stay afloat. These actions 
+also buffer against GDP losses from disasters that 
+can balloon debt levels, decrease credit ratings and 
+derail development. When disaster risk reduction 
+works, emergencies are prevented, and development 
+investment goes further.  
+Reaping the rewards of resilience also requires 
+ring-fencing disaster risk reduction budgets to 
+empower responsible agencies and mainstreaming 
+disaster risk reduction across sectors and plans. 
+It means implementing appropriate accountability 
+mechanisms, including budget tagging and tracking 
+198 
+
+========== PAGE 212 ==========
+ 
+ 
+ 
+systems for DRR-related losses and expenditures. 
+It also means keeping track of how ministries 
+have articulated and allocated funds across the 
+layers of risk management and systematically 
+capturing lessons on what worked and what needs 
+improvement after disasters. 
+Measuring disaster resilience across sectors is 
+essential to ensure that standards are applied 
+consistently to public investments, now and in the 
+future. This, in turn, is important for entities such as 
+public pension funds so that younger generations 
+remain confident that the contributions they make 
+today will retain their future value. 
+3. Innovate to keep risk transfer and insurance sustainable 
+Risk transfer mechanisms, such as insurance, can 
+no longer thrive unless governments and companies 
+ensure their actions are more resilient to disaster 
+shocks. To quote Prime Minister Mia Mottley of 
+Barbados, “When a sector or a country or a region 
+becomes uninsurable, they effectively become 
+uninvestable.”
+1 Risk transfer has great potential to 
+incentivize risk reduction. If a country invests in risk 
+reduction, insurance premiums should come down. 
+When insurance companies are required to publish 
+coverage and non-renewal data annually, it sends a 
+powerful signal to markets about the price of unsafe 
+infrastructure, supply chains and areas where risk is 
+increasing. As volatility in hazard patterns increases, 
+scaling up the pool of people and assets protected 
+by public and/or private sector-backed risk transfer 
+mechanisms is essential to take resilience-building 
+to scale.   
+Making this work will require insurers to evolve: rather 
+than pricing premiums solely around replacement 
+costs, they must enable rebuilding to a standard 
+fit for the future, and design products that are 
+better adapted to their specific contexts. Insurance 
+4. Make the business case 
+The private sector accounts for about 75% of 
+capital investment in most economies, but if these 
+investments are not risk-informed, societal resilience 
+will remain out of reach. There is significant scope 
+for innovation and co-financing partnerships to 
+incentivize private sector modernization and 
+investment in disaster risk reduction. Much of 
+the world’s hidden disaster risk is concentrated 
+in underinsured companies and is increasingly 
+exposed to direct damage, supply chain disruption, 
+and broader financial volatility. 
+products have often struggled when transplanted 
+wholesale from developed to developing countries 
+without adaptation. This has frequently created 
+affordability challenges or eroded trust between 
+policyholders and insurers. A more tailored approach 
+that supports insurance in easing the relief burden 
+on governments while protecting consumers is 
+essential if risk transfer tools are to succeed across 
+developed and developing contexts, as illustrated by 
+the case studies presented in chapters 4 and 6. 
+Beyond domestic and commercial insurance, 
+finance for adaptation and loss and damage are 
+among the risk-sharing instruments that offer 
+considerable potential for expansion. Needs-based 
+social safety nets have long functioned in areas such 
+as public health to cover individuals against rare 
+but predictable diseases. The same kind of social 
+safety nets must now emerge at scale to protect 
+low-income workers from infrequent but high-
+impact disasters (such as periods of extreme heat, 
+when outdoor work is impossible) and to ensure 
+that recovery assistance reaches poor households 
+quickly. 
+Increasingly investments underpinned by sound 
+plans to manage risk and future volatility will 
+continue to attract financing to meet sustainable 
+development targets. Others may struggle. A 
+lack of risk understanding cannot be allowed to 
+hamper investment and development, particularly in 
+countries that need it most. 
+Communities and companies have centuries of 
+experience in coping with disasters and taking 
+action to reduce risk. Today, at the dawn of a new 
+199 
+
+========== PAGE 213 ==========
+ 
+ 
+ 
+ 
+ 
+information age, their capacities can be vastly 
+strengthened by applying artificial intelligence to 
+accelerate learning and analyse trends across many 
+areas of disaster management. At the same time, 
+advances in engineering and emerging resilient 
+technologies offer new opportunities to build more 
+safely and affordably. Industries, such as insurance, 
+recognize that their expertise in risk analytics has 
+value beyond underwriting. It helps to identify and 
+scale up safer, and, therefore, more investable, 
+infrastructure. These efforts deserve recognition, 
+incentives, and other strategic tools to ensure a just 
+green transition and sustainable future. 
+5. Anticipate shocks to reduce humanitarian need 
+Because resilience-building to date has been 
+insufficient, many vulnerable countries remain 
+trapped in a vicious cycle of disaster, response 
+and recovery, only to repeat the pattern again and 
+again. The international community has a shared 
+responsibility and interest in breaking the cycle. This 
+requires scaling up anticipatory action and finance, 
+while also increasing the percentage of aid activities 
+targeting disaster risk reduction beyond the current 
+global level of 2%. 
+It also requires a shift in mindset, recognizing that 
+disasters arise not just from hazards, but from 
+underlying vulnerabilities or heightened exposure 
+that enable hazards to escalate into a humanitarian 
+crisis. Employing low-cost tools, such as disaster 
+forensic analysis, to pinpoint these factors is 
+essential because recovery efforts to reduce core 
+vulnerabilities or the most damaging exposures are 
+more cost-effective and have the greatest potential 
+to prevent future crises. 
+Reducing humanitarian needs saves lives and 
+decreases suffering. It is also cost-effective and 
+benefits individuals, societies, economies and the 
+environment, even decades after a shock. Reducing 
+needs during a disaster is impossible. It requires 
+careful, proactive risk reduction to prevent hazards 
+from escalating into disasters. 
+6. Leverage the multiplier effect of international financial mechanisms 
+International finance institutions and public planners 
+must harness the power of increasingly globalized 
+financial markets to share risk more broadly, find 
+better ways to prevent fiscal gaps and support faster, 
+better-targeted recovery, ensuring that disasters 
+do not create humanitarian needs and long-term 
+suffering. 
+Increasing resilience can deliver significant efficiency 
+gains. These must be central to how multilateral 
+donors and development banks protect their 
+portfolios from the cascading impacts of disaster 
+volatility. Even relatively modest interventions, 
+such as extending reinsurance-style coverage to 
+absorb a share of GDP losses when LDCs and SIDS 
+are impacted by a major disaster, can prevent debt 
+defaults and avert decades of stalled development. 
+Resilience pays, and concrete measures to buffer 
+against disaster shocks should become standard in 
+designing sovereign loan programs and prioritizing 
+official development assistance (ODA). 
+As multilateral systems evolve to address complex 
+challenges such as adaptation and loss-and-damage 
+finance, it will be essential to draw lessons from risk 
+pooling and reinsurance. This requires innovation 
+and sustained learning, but the potential benefits 
+are substantial. There are mechanisms in place 
+that can be strengthened to facilitate this, such as 
+the Santiago Network, which aims to provide much-
+needed technical assistance to developing countries 
+for building resilience to loss and damage. 
+In many contexts, tools like ODA and, increasingly, 
+climate adaptation finance should be used to 
+help fiscally constrained countries enhance their 
+resilience. This supports long-term stability and 
+increases aid effectiveness, given that disaster 
+risk reduction measures often deliver some of the 
+highest benefit-cost ratios, ranging from 2:1 to 10:1 
+or more. 
+200 
+
+========== PAGE 214 ==========
+Act now: break the cycle and build resilience 
+Breaking the current destructive cycle of disaster, 
+recovery, and debt is urgent and essential for 
+continued prosperity in a climate-changed world. The 
+rising costs and intensifying frequency of disasters 
+can no longer be treated as isolated events. They are 
+systemic threats that demand a fundamental shift 
+in how risk is understood, financed and managed 
+globally. By embedding disaster risk reduction at the 
+heart of financial decisions and policy frameworks, 
+governments, businesses and communities can 
+interrupt harmful cycles of vulnerability, loss and 
+debt while accelerating sustainable, equitable 
+development. 
+The pathway beyond 2030 need not be defined 
+by shocks and piecemeal, unplanned recovery; 
+instead, proactive investment in resilience can pave 
+the way to a future defined by stability, prosperity 
+and sustainable progress. The opportunities for 
+transformative action are clear. Now it is up to 
+decision-makers across the globe to seize them. 
+1https://www.foreign.gov.bb/rising-insurance-costs-a-threat-to-barbados-competitiveness/ 
+201 
+
+========== PAGE 215 ==========
+202 
+ 
+  
+  
+  
+  
+   
+  
+  
+   
+    
+  
+  
+  
+    
+  
+  
+  
+  
+   
+    
+    
+  
+  
+  
+  
+  
+  
+ 
+Abbreviations 
+and acronyms 
+AA Anticipatory Action 
+AAEC Average Annual Embodied Carbon 
+AAL Annual Average Loss 
+AI Artificial intelligence 
+ARC African Risk Capacity 
+ASEAN Association of Southeast Asian Nations 
+ASIS Agricultural Stress Index System 
+AUD Australian Dollar 
+BBC British Broadcasting Corporation 
+BCCR Central Bank of Costa Rica 
+BCR Benefit-Cost Ratio 
+BdF Banque de France 
+BERLAC Capacity Building for Disaster Risk Reduction in the Built Environment 
+in Latin America and the Caribbean project 
+BN Billion (109) 
+BSC Balanced Scorecard 
+°C Degrees Celsius 
+CAD Canadian Dollar 
+CAR Capital Adequacy Ratio 
+CBI Climate Bonds Initiative 
+CCA Climate Change Adaptation 
+CCH WHO Team Climate Change and Health 
+CCRIF Caribbean Catastrophe Risk Insurance Facility 
+CDR Carbon Dioxide Removal 
+CDRI Coalition for Disaster Resilient Infrastructure 
+COP Conference of the Parties 
+COVID-19 Coronavirus Disease 2019 
+
