@@ -1,0 +1,525 @@
+
+
+========== PAGE 98 ==========
+  
+ 
+ 
+ 
+ 
+  
+Economic costs and development chart below looks at the average annual costs of 
+impact earthquakes. The bar chart on the right of Figure 27 
+shows the total fatalities, while the two graphics onAs outlined in Chapter 2, economic losses are not the left look at the highest economic costs in billions always aligned with human costs. For instance, the of dollars and percentage of GDP , respectively. 
+Figure 27. Economic cost of earthquakes, by selected countries (based on Average Annual Loss calculations) 
+Source: GEM Foundation, 2024 
+Large countries with sizeable economies better 
+absorb localized shocks from an earthquake, 
+while smaller countries may be disproportionately 
+affected by moderate impacts. For example, on 
+average, Japan, the United States of America and 
+China can expect to see in excess of $10 billion 
+in annual economic losses from earthquakes. 
+Nevertheless, the highest net losses in absolute 
+terms are not the same as economic losses as a 
+percentage of GDP . For example, while Ecuador does 
+not feature in the top five in terms of total economic 
+losses to earthquakes, it ranks the highest in how 
+much those losses constitute as a percentage of 
+GDP (approximately 1.4%). The scale of economic 
+losses is also quite different than the scale of 
+fatalities. Many countries that incur major economic 
+losses have at least been able to reduce deaths and 
+life-years lost due to a major event. 
+Large, geographically diversified countries can 
+better absorb localized shocks partly because 
+the impacts are often confined to a specific area, 
+leaving the broader economy relatively intact. In 
+contrast, smaller countries, with less geographic 
+diversification, may be disproportionately affected 
+by even moderate absolute losses. 
+As Figure 28 shows, these disparities also play 
+out when looking across total disaster risk across 
+regions. For example, in 2023, North America had 
+by far the most significant economic exposure to 
+disasters overall, with $69.57 billion in direct losses. 
+These nevertheless represent a relatively modest 
+share (0.23%) of subregional GDP . Micronesia, on 
+the other hand, incurred only a fraction of these net 
+losses, $4.3 billion, but with a far greater relative 
+impact (46.1%) on its subregional GDP . 
+82 
+---
+
+
+========== PAGE 99 ==========
+Figure 28. The total (in $billions) and relative (% of GDP) cost of disasters by subregion, 2023 
+Direct cost are low compared 
+to other regions but very 
+costly for their economic size 
+Direct cost are high compared 
+to other regions but small for 
+their economic size 
+2005 2023 Average 2000 - 2023 
+Subregions Total Direct losses 
+(Billions USD) 
+% of Subregion's Total Direct losses 
+GDP (Billions USD) 
+% of Subregion's 
+GDP 
+Avg Direct Avg % of Subregion's losses (Billions GDP USD) 
+Australia and New Zealand 0.35 0.043 4.70 0.237 4.86 0.363 
+Micronesia* 0.002 0.028 4.30 46.139 0.30 3.374 
+Central Asia** 0.09 0.112 0.01 0.003 0.10 0.074 
+Eastern Asia 21.36 0.259 29.56 0.122 55.12 0.417 
+South-eastern Asia 1.43 0.153 2.66 0.070 7.25 0.377 
+Southern Asia 19.59 1.506 0.78 0.016 10.57 0.450 
+Western Asia 0.00 0.000 42.93 1.008 2.65 0.083 
+Northern Africa 0.60 0.160 13.20 1.335 1.18 0.238 
+Sub-Saharan Africa 0.04 0.005 1.20 0.062 1.25 0.090 
+Eastern Europe 2.89 0.177 0.05 0.001 1.75 0.099 
+Northern Europe 8.45 0.211 0.08 0.001 2.15 0.057 
+Southern Europe 7.94 0.220 10.42 0.218 5.80 0.166 
+Western Europe 5.77 0.083 2.14 0.020 7.58 0.098 
+Northern America 248.19 1.746 69.57 0.233 72.61 0.388 
+Latin America and the Caribbean 21.60 0.747 21.00 0.294 15.24 0.312 
+Source: UNDRR using CRED and UCLouvain, 2025 
+Figure 29. Absolute and relative direct costs of disasters by subregion annually, 2005, 2023, as a percentage of 
+GDP and on average 2000-2023 
+Source: UNDRR using CRED and UCLouvain, 2025; World Bank, 2025 
+Note: *Figures for 2005 correspond to 2004. **Figures for 2023 correspond to 2021 
+83 
+---
+
+
+========== PAGE 110 ==========
+  
+Figure 32. Annual average losses by sector from floods, earthquakes and tropical cyclones 
+288.2 
+22.1 
+108.5 
+Source: UNDRR using data from CDRI (2023) 
+The annual average loss for critical infrastructure $56.7 billion in Europe and $5.9 billion in Oceania. 31 
+sectors due to these three hazards globally is $257.2 Again, as outlined earlier, lower $losses in Africa do 
+billion30. There are significant regional differences in not necessarily mean less of an impact on GDP or 
+losses, however, with $2.3 billion of losses in Africa, sustainable development.  
+$103.7 billion in the Americas, $126.9 billion in Asia, 
+Figure 33 below further illustrates how AAL varies by sector. 
+Figure 33. Regional and sectoral distribution of AAL from earthquakes, floods and tropical cyclones 
+Source: UNDRR based on the data from CDRI (2023) 
+95 
+---
+
+
+========== PAGE 125 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The value of the nVaR measurement takes a broader 
+perspective on nature loss, accounting for the 
+immediate impacts of environmental damage and 
+known effects (for instance, the economic losses 
+in agriculture, manufacturing and other sectors due 
+to water-related risks). The analysis suggests that, 
+without stepped-up action to build resilience and 
+stabilize ecosystems, disaster-related costs could 
+account for over 1% of global GDP by 2050, with 
+more severe impacts in lower-income nations where 
+resilience gaps and limited resources exacerbate 
+vulnerabilities.
+50 Such losses would significantly 
+disrupt development and global trade, deepen 
+socio-economic inequalities and increase debt 
+and dependencies on external aid, particularly in 
+developing regions. 
+Indirect economic impacts on food 
+systems 
+In a more globalized world, the impact of disasters 
+on the price of food is often determined by far 
+more than just the cost of production. Increasingly, 
+food security comprises four elements: availability, 
+access, utilization and system stability over time. 
+Factors such as fluctuations in the cost drivers of 
+internationally traded food can determine access 
+and affordability. The costs of sourcing imported 
+food differ considerably between and even within 
+countries. 
+While global agricultural and food trade has 
+dramatically expanded in recent decades, helping 
+reduce food insecurity by providing year-round 
+access to food, this connectivity also involves 
+managing supply chains and other risks. Volatility 
+in food prices can be driven by a range of factors, 
+including differences in the production costs across 
+exporting regions, tariffs and trade agreements, 
+transport costs, border compliance costs and non-
+tariff barriers.
+53 Transport costs can also exert an 
+outsized impact on global food prices. For example, 
+maritime transport costs are 5–15% of the total cost 
+of grains and oilseeds at the importing port (the 
+cost from the field to the importing port). Transport 
+inland adds significantly to that cost, particularly in 
+developing and landlocked countries. High transport 
+costs can be an important trade friction limiting 
+However, these costs also highlight that investing 
+in environmental resilience can reap significant 
+dividends in averted losses, making it a sound 
+investment from an economic perspective. While 
+the estimated cost of achieving significant land 
+restoration by 2030 globally is more than $300 
+billion annually, the investment would repay itself 
+many times over.
+51 According to estimates, $1 
+invested in restoring degraded land could return 
+$7–30 in economic benefits.
+52 Land restoration and 
+sustainable crop and rangeland management are 
+often the most cost-effective methods for halting or 
+reversing desertification, and the benefits of acting 
+against land degradation vastly outweigh the costs 
+of sustainable landscape management. 
+trade, preventing certain regions from reaping the 
+bene
+---
+
+
+========== PAGE 130 ==========
+16 FAO, 2023 
+17 Note: detailed methodology in Annex I. 
+18 Data Souces: CRED and UCLouvain, 2025. Extracted 22 january 2025; 
+Desinventar, 2025. Extracted 26 February 2025; World Bank, 2025. 
+Extracted 22 January 2025; WHO, 2024; IDMC, 2024; Roy et al., 2024; FAO, 
+2023; Nkonya, Mirzabaev, and Von Braun, 2016; UNCCD, 2024; Aze, Barry, 
+and Bellerby, 2014. 
+19 UNDRR using CRED and UCLouvain, 2025. Extracted 22 january 2025 
+20 Intergovernmental Panel On Climate Change (Ipcc), 2023. 
+21 A High Resolution Input-Output Model to Assess the Economic Impact 
+of Floods, Di Noia, Caiani et al, 2024 
+22 Middelanis, R et al., 2025. 
+23 Middelanis, R et al., 2025. 
+24 This is because the marginal utility of consumption is higher for poorer 
+individuals: every dollar lost represents a more significant reduction in 
+their ability to meet basic needs, access essential services, and maintain 
+a certain standard of living. A “poor” person, a $100 loss in consumption 
+can have a disproportionately negative effect on their overall wellbeing 
+compared to someone with greater financial flexibility, who typically have 
+a larger buffer and more diverse income sources. This disparity is what 
+the wellbeing loss metric seeks to capture. The same monetary loss 
+can translate into vastly different wellbeing impacts depending on one’s 
+socioeconomic status. 
+25 Middelanis, R et all., 2025. 
+26 Resilient Planet: Data Hub, n.d. 
+27 A SDR allocation is a way of supplementing a countries’ foreign 
+exchange reserves, allowing members to reduce their reliance on more 
+expensive domestic or external debt for building reserves. 
+28 Resilient Planet: Data Hub, n.d. 
+29 An AAL is the expected long-term value of losses over a year, calculated 
+as the integral (or summation) of the loss exceedance probability (LEP) 
+curve, averaged over many years (insurance grade models aim for a 
+1000-year event set, yet not universally applicable). 
+30For the GIRI methodology, critical infrastructure refers to water and 
+wastewater, telecommunications, roads and railways, power, ports and 
+airport as well as oil and gas (but does not include health, education and 
+government buildings). 
+31As these figures are based on aggregate economic losses, these tend 
+to be greatest in higher-income countries with geater unit values for 
+housing, infrastructure and other exposed assets. 
+32 This AAL calculation from CDRI aggregates assets into broader 
+categories by dividing them into buildings (which includes a wide range 
+of structures such as residential housing, education centres, healthcare 
+facilities and so forth) and infrastructure (covering assets like roads, 
+utilities and other production-related facilities). 
+33Hallegatte, Jooste and McIsaac, 2022. 
+34 CDRI, 2024. 
+35 CDRI, 2024. 
+36 Adshead et al., 2024. There is significant variation within regions: the 
+AAL for the education sector due to floods and cyclones is 90% for 
+Oceania ($0.38 billion), 81% for Europe ($5.4 billion), 77% for Asia ($15.6
+---
+
+
+========== PAGE 141 ==========
+ 
+ 
+ 
+  
+ 
+While countries like Thailand are expected to see 
+a reduction in their exposure, as a large portion 
+of new buildings are located in lower-risk areas, 
+in Indonesia, new buildings are more likely to be 
+concentrated in areas of high seismic risk. Given the 
+carbon-intensive nature of construction and urban 
+Future flood risk   
+The annual average losses associated with flooding 
+total $388 billion globally. This is projected to rise 
+considerably in the near future due to climate 
+change. By 2050, models suggest that the average 
+annual losses to infrastructure from riverine flooding 
+will increase between 5% (under the low-emission 
+RCP 2.6 climate scenario) and 13% (under the high-
+emission RCP8.5 scenario), reaching $407–439 
+billion in annual losses (Map 36).
+10 
+Not all regions will see the same flood hazard 
+trends under these projections. While some regions 
+development, increasing seismic resilience can also 
+positively impact the planet. The additional carbon 
+cost of rebuilding is averted by preventing housing 
+and infrastructure from being damaged or destroyed 
+by an earthquake. 
+may get drier and affected by drought rather than 
+flooding (such as Southern Europe, Australia and 
+New Zealand, Central America or Southern Africa). 
+Other regions may experience higher average 
+annual losses as a result of more frequent and 
+intense flooding: for example, Western Asia (+60%), 
+Melanesia (+44%), Eastern Africa (+42%), Middle 
+Africa (+31%), Eastern Europe (+28%), Southern 
+Asia (+23%), Northern Africa (+19%) or Central Asia 
+(+17%). 
+126 
+---
+
+
+========== PAGE 146 ==========
+   
+ 
+ 
+ 
+Future storms and tropical cyclone risk 
+The IPCC clarifies that the severity of storms such 
+as tropical cyclones will increase with warmer sea 
+temperatures.
+14 Tropical cyclones are also expected 
+to move poleward, given that new regions will likely 
+see their ocean temperatures reach 26°C (the 
+minimum threshold for cyclones to occur).
+15  This 
+means that areas not previously susceptible must 
+learn how to prepare. 
+The already immense economic impacts of storms 
+are expected to worsen. The losses generated by 
+tropical cyclones (Map 38) generate storm surges, 
+precipitation, flooding and winds that together 
+generate average annual losses of $112 billion. In 
+the current climate, a 1-in-100-year tropical cyclone 
+would affect between 65 and 80 million people.
+16 By 
+2050, in a high-emission climate change scenario 
+(RCP8.5), these losses could increase by 35.6% to 
+$152 billion annually. In absolute values, the main 
+countries affected would be the United States of 
+America, Japan and China. However, in relative 
+terms, low-income countries such as small island 
+developing states (SIDS) may suffer far greater 
+impacts and have fewer resources to prevent 
+disasters and support recovery. 
+131 
+---
+
+
+========== PAGE 149 ==========
+ 
+ 
+ 
+  
+ 
+ 
+ 
+Map 39. Expected increase in annual population in Asia affected by typhoon-induced power outages 
+by 2050 under a high emission (RCP8.5) scenario 
+delimitation of its frontiers or boundaries. 
+Source: Hall, J., Thomas, F., Mo, Y., Rui, J., Russell, 
+T., Robertson, M., Verschuur, J., & Pant, R. (2024). 
+Tropical cyclone risk to global electricity supply. 
+Square Research. https://doi.org/10.21203/ 
+rs.3.rs-4650238/v1 
+Some countries are already taking notice. For 
+example, in the eastern coastal state of Odisha, 
+India,
+18 in 2019, Cyclone Fani caused approximately 
+US$1.2 billion in damage to power infrastructure.19 
+The impacts highlighted the need for more disaster 
+and climate-resistant infrastructure.
+16 Based on a 
+three-phase study of risk to Odisha’s power systems, 
+the government began prioritizing upgraded 
+investments to protect key systems to be fit for the 
+climate future.
+20 
+The impacts of increased storms also undermine 
+fragile ecosystems like mangroves and coral reefs. 
+For example, 97% of the risk of substantial damage to 
+mangroves is due to storms that develop into major 
+(category 3–5) tropical cyclones. These destroy 
+The designations employed and the presentation of material on this 
+map do not imply the expression of any opinion whatsoever on the part 
+of the Secretariat of the United Nations concerning the legal status of 
+any country, territory, city or area or of its authorities, or concerning the 
+natural buffers such as mangroves, and protect 
+people and their assets from storm surges and the 
+full force of winds and floods. The current exposure 
+of mangroves to tropical cyclones worldwide is likely 
+to increase significantly by 2050 (Map 40). At the 
+country level, the risk is widely distributed across the 
+globe, but there are clear risk hotspots in mangroves 
+bordering the Gulf/Caribbean, the South Indian 
+Ocean and the Northwest Pacific. In addition to the 
+well-recognized risks in the Gulf/Caribbean region 
+and Oceania,
+21 the Northwest Pacific hosts 3 of the 
+10 areas with the highest total risk (China, Japan 
+and the Philippines) and 4 of the 10 with the highest 
+risk per unit area of mangroves (including Guam, 
+the Marshall Islands and the Northern Mariana 
+Islands).
+22 
+134 
+---
+
+
+========== PAGE 178 ==========
+ 
+ 
+ 
+  
+ 
+  
+Figure 54. Sovereign credit rating impacts for a 1-in-1,000-year flood event across three climate 
+and adaptation scenarios 
+Source: Bernhofen et al., 2024 
+Grade Rating 
+1 in 1000 loss year 
+Numerical TodayF uture Future + 
+Adaptation 
+Investment 
+Non-Investment 
+BBB+ 13 Rating 
+BBB 12 
+BBB- 11 
+BB+ 10 
+BB 9 
+Disaster and climate risks are rising, with profound financial implications for the most exposed countries. 
+Understanding the risks to private debt, particularly sovereign debt, the world’s largest and most important 
+asset class, is crucial from a systemic resilience perspective. Catastrophe models with economic and financial 
+models, climate risk and adaptation, can be effectively integrated into sovereign credit rating scenarios. Scenario 
+analysis like this could enhance investment decision-making, signalling that a country is actively addressing 
+its climate vulnerabilities. “Adaptation smart” sovereign credit rating scenarios could also incentivize further 
+adaptation efforts, especially if they show how resilience investments may result in avoided rating downgrades. 
+This scenario highlights how early adaptation investments can directly reduce sovereign borrowing costs. 
+The unsustainable risk transfer spiral 
+Even in wealthier regions such as the European 
+Union, only about a quarter of climate-related 
+catastrophe losses are currently insured.
+8 As a 
+result, central governments shoulder an increasingly 
+heavy burden of hazard-related risk. Low insurance 
+penetration also limits the ability to share risk widely, 
+particularly in developing countries where few assets 
+are protected: for instance, insurance coverage 
+remains below 1% in countries like Bangladesh, 
+India, Vietnam, the Philippines, Indonesia, Egypt and 
+Nigeria. Although precise figures are scarce, the gap 
+is clear. In 2018, an estimated $163 billion of assets 
+worldwide were underinsured, leaving an exposure 
+gap that threatens livelihoods and global prosperity.
+9 
+Furthermore, just when increasing insurance 
+coverage should be a priority, current insurance and 
+risk transfer markets are becoming less effective 
+as tools for pooling and transferring disaster risk. 
+Rising insurance premiums, driven by climate 
+change impacts, are making coverage unaffordable 
+for many households in climate-affected countries 
+such as Australia (see Box 30).
+10 Similarly, in the 
+United States, where insurance is often mandatory 
+as part of house mortgage approvals, the average 
+cost of home insurance rose from $1,902 to $2,530 
+between 2020 and 2023. In postcodes with the 
+highest disaster risk, the increases were much larger, 
+and there is increasing evidence that insurance 
+companies are even withdrawing from what are 
+perceived as high-risk locales.
+11 
+There is a clear danger that as insurance becomes 
+less affordable, fewer people will buy into it, pushing 
+costs up and leading insurers to withdraw from high-
+risk markets, although these may be where the needs 
+ar
+---
+
+
+========== PAGE 216 ==========
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+   
+    
+  
+    
+  
+CO2e Carbon Dioxide equivalent 
+CRED Centre for Research on the Epidemiology of Disasters 
+CRT Catastrophe Risk Transfer 
+CSOs Civil Society Organizations 
+CSR Corporate Social Responsibility 
+DALY Disability-Adjusted Life Year 
+DDLD Desertification, Land degradation and Droughts 
+DDRM Dynamic Disaster Risk Model 
+DFIs Development Finance Institutions 
+DFID Department for International Development of the United Kingdom 
+DRF Disaster Ready Fund 
+DRM Disaster Risk Management 
+DRR Disaster Risk Reduction 
+DTM Displacement Tracking Matrix 
+DTS Disaster Tracking System for hazardous events and losses and damages 
+EAP East Asia and Pacific 
+EBRD European Bank for Reconstruction and Development 
+ECLAC Economic Commission for Latin America and the Caribbean 
+ECV Essential Climate Variable 
+EDC Economic Development Corporation 
+EHC WHO Team Environment, Climate Change and Health 
+EM-DAT Emergency Events Database 
+EOSDIS Earth Observing System Data and Information System 
+EQ Earthquake 
+EW4ALL Early Warnings for All initiative 
+FAO Food and Agriculture Organization of the United Nations 
+FM Financial Management 
+GAR Global Assessment Report 
+GB Great Britain 
+GDP Gross Domestic Product 
+GEM Global Earthquake Model 
+203 
+---

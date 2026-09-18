@@ -82,3 +82,51 @@ Stage Summary:
   * dashboard-stakeholder-insurer.png
   * dashboard-mobile.png
   * dashboard-fullpage.png
+
+---
+Task ID: 2
+Agent: main
+Task: Add world map with 3D bar visualization, separate top-level tabs
+
+Work Log:
+- Installed echarts + echarts-gl + echarts-for-react for 3D visualization
+- Fetched world map GeoJSON (217 features) to /public/geo/world.json from apache/echarts GitHub
+- Extracted additional geographic data from PDF (subregional direct losses p.99, future flood risk p.141, storm risk p.146)
+- Added comprehensive geographic data layer to gar-data.ts:
+  * 6 selectable metrics: Direct Losses, % of GDP, Mortality, Affected, MHEWS, Flood Δ 2050
+  * 55+ country data points with [lng,lat] coords and all 6 metrics each
+  * Color stops per metric with proper interpolation
+  * Regional summary table
+- Built WorldRiskMap component (src/components/dashboard/world-map.tsx):
+  * ECharts geo3D base map with realistic lighting
+  * bar3D series — 3D bars rising from each country, height & color driven by selected metric
+  * scatter3D fallback when 3D Bars toggled off
+  * Rich tooltip showing all 6 metrics per country on hover
+  * Metric selector (6 buttons)
+  * Group filter (All / LDC / LLDC / SIDS / G20 / OECD)
+  * 3D Bars on/off toggle
+  * Side panel: gradient legend, top 5 countries by current metric, global snapshot stats
+  * Drag to rotate, scroll to zoom, right-drag to pan
+- Built top-level Tab system (src/components/dashboard/tabs-container.tsx):
+  * Sticky top tab bar with two views: "Policy Dashboard" and "World Risk Map (3D)"
+  * Lazy-loaded WorldRiskMap (echarts-gl is heavy ~ reduces initial bundle by ~1MB)
+  * Suspense fallback with loading spinner
+  * Methodology note at bottom of map section
+- Verified with Agent Browser:
+  * Server starts cleanly via zscripts/dev.sh
+  * Dashboard tab loads with all 11 sections present
+  * Map tab loads with all controls (metric selector, view toggle, group filter, legend, top 5, snapshot)
+  * Metric switching works (% of GDP heading updates)
+  * Group filter works (LDC active state)
+  * 3D Bars toggle works (On ↔ Off)
+  * Mobile responsive: tab labels shorten ("Policy" / "World")
+  * No console errors after clean reload
+
+Stage Summary:
+- Lint passes (exit 0)
+- Dev server running cleanly via zscripts/dev.sh on port 3000
+- All interactive controls verified working
+- Screenshots saved to /home/z/my-project/download/:
+  * world-map-3d.png (desktop view of map tab)
+  * world-map-mobile.png (mobile view)
+- Memory note: 4GB environment is tight for dev server + Chrome; using `setsid bash .zscripts/dev.sh` keeps dev server stable
