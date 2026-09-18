@@ -2,12 +2,10 @@
 
 import { useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import { LayoutDashboard, Globe2 } from "lucide-react";
+import { LayoutDashboard, Globe2, FileText, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {
-  DashboardHeader,
-  // we will re-use its layout for the dashboard tab
-} from "@/components/dashboard/header";
+import { reportMeta } from "@/lib/gar-data";
+import { DashboardHeader } from "@/components/dashboard/header";
 import { HeroSection } from "@/components/dashboard/hero";
 import { TrueCostSection } from "@/components/dashboard/true-cost";
 import { BigFiveSection } from "@/components/dashboard/big-five";
@@ -19,6 +17,7 @@ import { FundingGapSection } from "@/components/dashboard/funding-gap";
 import { ActionAreasSection } from "@/components/dashboard/action-areas";
 import { StakeholderSection } from "@/components/dashboard/stakeholders";
 import { DashboardFooter } from "@/components/dashboard/footer";
+import { Button } from "@/components/ui/button";
 
 // Lazy-load the world map (echarts-gl is heavy — only load when user opens the Map tab)
 const WorldRiskMap = lazy(() =>
@@ -32,11 +31,11 @@ export function DashboardWithTabs() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      {/* Top-level tab bar */}
+      {/* Top-level tab bar (single header — no duplicate logo/title below) */}
       <div className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-14 items-center justify-between gap-4">
-            {/* Logo + brand */}
+            {/* Logo + brand (single occurrence) */}
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 via-orange-600 to-red-700 text-white shadow-md">
                 <Globe2 className="h-5 w-5" />
@@ -49,20 +48,35 @@ export function DashboardWithTabs() {
               </div>
             </div>
 
-            {/* Tab switcher */}
-            <div className="flex items-center gap-1 rounded-full bg-muted p-1">
-              <TabButton
-                active={activeTab === "dashboard"}
-                onClick={() => setActiveTab("dashboard")}
-                icon={<LayoutDashboard className="h-3.5 w-3.5" />}
-                label="Policy Dashboard"
-              />
-              <TabButton
-                active={activeTab === "map"}
-                onClick={() => setActiveTab("map")}
-                icon={<Globe2 className="h-3.5 w-3.5" />}
-                label="World Risk Map (3D)"
-              />
+            {/* Tab switcher + Full Report link */}
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                className="hidden md:inline-flex h-8 text-xs"
+                asChild
+              >
+                <a href={reportMeta.url} target="_blank" rel="noopener noreferrer">
+                  <FileText className="h-3.5 w-3.5 mr-1.5" />
+                  Full Report
+                  <ExternalLink className="h-3 w-3 ml-1.5" />
+                </a>
+              </Button>
+
+              <div className="flex items-center gap-1 rounded-full bg-muted p-1">
+                <TabButton
+                  active={activeTab === "dashboard"}
+                  onClick={() => setActiveTab("dashboard")}
+                  icon={<LayoutDashboard className="h-3.5 w-3.5" />}
+                  label="Policy Dashboard"
+                />
+                <TabButton
+                  active={activeTab === "map"}
+                  onClick={() => setActiveTab("map")}
+                  icon={<Globe2 className="h-3.5 w-3.5" />}
+                  label="World Risk Map (3D)"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -77,6 +91,7 @@ export function DashboardWithTabs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
           >
+            {/* Section sub-nav (no logo, no title — just section links) */}
             <DashboardHeader />
             <HeroSection />
             <TrueCostSection />
