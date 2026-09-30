@@ -21,7 +21,7 @@ export function DashboardFooter() {
             <p className="mt-4 max-w-md text-xs leading-relaxed text-muted-foreground">
               This dashboard transforms the UNDRR Global Assessment Report 2025 ({reportMeta.pages} pages) into
               a multi-stakeholder intelligence layer for evidence-based decision-making. All figures are
-              attributed to source chapters of the underlying report.
+              attributed to source chapters of the underlying report. For feedback reach out to potential101@protonmail.com.
             </p>
           </div>
 
