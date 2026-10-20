@@ -8,10 +8,10 @@ import { Users, HeartPulse, Banknote, Bell } from "lucide-react";
 
 export function VulnerableSection() {
   return (
-    <section id="vulnerable" className="scroll-mt-16 border-t bg-gradient-to-b from-background to-amber-500/5">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="vulnerable" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <Users className="h-4 w-4" />
             Chapter 1 · Box 1 — Disproportionate Burden
           </div>
@@ -39,19 +39,19 @@ export function VulnerableSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <Card className="h-full p-6 border-l-4" style={{ borderLeftColor: country.color }}>
+                <Card className="h-full border-x-0 border-b-0 p-0 pt-4">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <h3 className="text-2xl font-bold tracking-tight">{country.group}</h3>
                       <p className="mt-1 text-xs text-muted-foreground">{country.fullName}</p>
                     </div>
-                    <Badge variant="secondary" className="text-[10px]" style={{ background: `${country.color}20`, color: country.color }}>
+                    <Badge variant="secondary" className="border border-border bg-transparent font-mono text-[10px] text-foreground">
                       {country.mhewsCoverage}% MHEWS
                     </Badge>
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4">
-                    <div className="rounded-lg bg-muted/50 p-3">
+                    <div className="border-t border-border pt-3">
                       <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider text-muted-foreground">
                         <HeartPulse className="h-3 w-3" />
                         Mortality
@@ -62,7 +62,7 @@ export function VulnerableSection() {
                         {mortalityMultiple}× global avg
                       </p>
                     </div>
-                    <div className="rounded-lg bg-muted/50 p-3">
+                    <div className="border-t border-border pt-3">
                       <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider text-muted-foreground">
                         <Banknote className="h-3 w-3" />
                         Loss vs GDP share
@@ -88,7 +88,7 @@ export function VulnerableSection() {
         </div>
 
         {/* Disparity highlight callout */}
-        <Card className="mt-8 border-red-500/30 bg-red-500/5 p-6 sm:p-8">
+        <Card className="mt-8 border-x-0 border-b-0 border-t-2 border-t-[var(--rust)] p-0 pt-5 sm:pt-6">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-red-700 dark:text-red-400">
@@ -115,7 +115,7 @@ export function VulnerableSection() {
             </div>
 
             <div className="space-y-3">
-              <div className="rounded-lg border border-border/60 p-4">
+              <div className="border-t border-border pt-4">
                 <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
                   MHEWS coverage gap
                 </p>
@@ -123,9 +123,9 @@ export function VulnerableSection() {
                   {vulnerableCountries.map((c) => (
                     <div key={c.group} className="flex items-center gap-2">
                       <span className="w-12 text-muted-foreground">{c.group}</span>
-                      <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
+                      <div className="flex-1 h-2 bg-muted overflow-hidden">
                         <div
-                          className="h-full rounded-full"
+                          className="h-full"
                           style={{
                             width: `${c.mhewsCoverage}%`,
                             background: c.color,

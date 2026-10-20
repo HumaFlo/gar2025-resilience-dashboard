@@ -60,11 +60,11 @@ function SectionHeading({
 }) {
   return (
     <div className="mb-8 max-w-3xl">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-amber-800 dark:text-amber-400">
+      <p className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--rust-ink)]">
         {eyebrow}
       </p>
       <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h2>
-      <p className="mt-3 text-sm leading-6 text-muted-foreground sm:text-base">
+      <p className="mt-3 max-w-[62ch] text-sm leading-6 text-muted-foreground sm:text-base">
         {description}
       </p>
     </div>
@@ -87,7 +87,7 @@ function RateBars({
   description: string;
 }) {
   return (
-    <figure className="rounded-xl border border-border/70 bg-card p-4 sm:p-6">
+    <figure aria-label={title} className="min-w-0 border-t-2 border-foreground pt-4">
       <h3 className="text-base font-semibold">{title}</h3>
       <p className="mt-1 text-xs leading-5 text-muted-foreground">{description}</p>
       <ol className="mt-6 space-y-3">
@@ -95,12 +95,12 @@ function RateBars({
           <li key={label} className="grid grid-cols-[minmax(6.5rem,8rem)_1fr_3.5rem] items-center gap-2 sm:grid-cols-[minmax(7rem,9rem)_1fr_3.5rem]">
             <span
               className={`truncate text-xs sm:text-sm ${
-                label === "Timor-Leste" ? "font-semibold text-amber-800 dark:text-amber-400" : ""
+                label === "Timor-Leste" ? "font-semibold text-[var(--rust-ink)]" : ""
               }`}
             >
               {label}
             </span>
-            <span className="relative block h-3 overflow-visible rounded-sm bg-muted">
+            <span className="relative block h-3 overflow-visible bg-muted">
               {nationalAverage !== undefined && (
                 <span
                   aria-hidden="true"
@@ -114,8 +114,8 @@ function RateBars({
                 className={`block h-full rounded-sm ${
                   label === "Timor-Leste" ||
                   (nationalAverage !== undefined && value > nationalAverage)
-                    ? "bg-amber-700 dark:bg-amber-500"
-                    : "bg-muted-foreground/40"
+                    ? "bg-[var(--rust)]"
+                    : "bg-[var(--hair)]"
                 }`}
                 style={{ width: `${(value / max) * 100}%` }}
               />
@@ -129,7 +129,7 @@ function RateBars({
           Dashed line: national average, {nationalAverage}%.
         </p>
       )}
-      <figcaption className="mt-5 border-t border-border/60 pt-4 text-xs leading-5 text-muted-foreground">
+      <figcaption className="mt-5 border-t border-border pt-4 font-mono text-[10.5px] leading-5 text-muted-foreground">
         {source}
       </figcaption>
     </figure>
@@ -139,17 +139,17 @@ function RateBars({
 export function StuntingBrief() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border/60 bg-gradient-to-br from-amber-500/10 via-background to-orange-700/10">
-        <div className="mx-auto max-w-7xl px-4 pb-12 pt-5 sm:px-6 sm:pb-16 lg:px-8">
+      <header className="border-b border-border">
+        <div className="mx-auto max-w-[1180px] px-5 pb-12 pt-5 sm:px-8 sm:pb-16">
           <Link
             href="/"
-            className="inline-flex min-h-10 items-center rounded-md text-sm font-medium text-muted-foreground underline-offset-4 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600"
+            className="inline-flex min-h-11 items-center text-sm font-medium text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
           >
             ← Back to the GAR 2025 dashboard
           </Link>
           <div className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-amber-800 dark:text-amber-400">
+              <p className="mb-4 font-mono text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--rust-ink)]">
                 Timor-Leste · Child nutrition brief
               </p>
               <div className="mb-5 h-0.5 w-16 bg-foreground" />
@@ -160,13 +160,13 @@ export function StuntingBrief() {
                 Nearly half of under-fives are stunted. Nine years of national effort brought a
                 drop of 0.7 points.
               </p>
-              <p className="mt-5 text-xs leading-5 text-muted-foreground">
+              <p className="mt-5 font-mono text-[10.5px] leading-5 text-muted-foreground">
                 TLDHS 2025–26, TL-FNS 2020, JME 2025, World Bank costing 2024. Compiled October
                 2026.
               </p>
             </div>
-            <div className="rounded-2xl border border-amber-700/15 bg-background/80 p-6 shadow-sm sm:p-8">
-              <p className="text-6xl font-semibold tracking-tight text-amber-700 dark:text-amber-400 sm:text-7xl">
+            <div className="border-t-2 border-[var(--rust)] pt-5 sm:pt-7">
+              <p className="text-6xl font-semibold tracking-tight tabular-nums text-[var(--rust)] sm:text-7xl">
                 44.9%
               </p>
               <p className="mt-2 text-lg font-semibold">of children under five are stunted</p>
@@ -174,7 +174,7 @@ export function StuntingBrief() {
                 About 70,000 children; 16.5% of them severely. The rate is the second highest in
                 Southeast Asia.
               </p>
-              <p className="mt-4 text-[11px] leading-5 text-muted-foreground">
+              <p className="mt-4 font-mono text-[10.5px] leading-5 text-muted-foreground">
                 TLDHS 2025–26 Key Indicators Report; JME 2024
               </p>
             </div>
@@ -184,14 +184,14 @@ export function StuntingBrief() {
 
       <nav
         aria-label="Brief sections"
-        className="sticky top-0 z-30 border-b border-border/70 bg-background/95 backdrop-blur"
+        className="sticky top-0 z-30 border-b border-border bg-background"
       >
-        <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-[1180px] gap-2 overflow-x-auto px-5 py-1 sm:px-8">
           {sections.map(({ id, label }) => (
             <a
               key={id}
               href={`#${id}`}
-              className="shrink-0 rounded-md px-3 py-2 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600"
+              className="inline-flex min-h-11 shrink-0 items-center border-b-2 border-transparent px-3 text-xs font-medium text-muted-foreground hover:border-[var(--rust)] hover:text-foreground"
             >
               {label}
             </a>
@@ -200,8 +200,8 @@ export function StuntingBrief() {
       </nav>
 
       <main>
-        <section id="scale" className="scroll-mt-16 border-b border-border/60 py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="scale" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
             <SectionHeading
               eyebrow="The scale"
               title="Child stunting and malnutrition in Timor-Leste: key statistics"
@@ -219,32 +219,32 @@ export function StuntingBrief() {
                 <article
                   key={label as string}
                   className={`border-t-2 pt-3 ${
-                    highlighted ? "border-amber-700 dark:border-amber-500" : "border-foreground"
+                    highlighted ? "border-[var(--rust)]" : "border-foreground"
                   }`}
                 >
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                  <p className="font-mono text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
                     {label}
                   </p>
                   <p className="my-2 text-3xl font-semibold tracking-tight tabular-nums sm:text-4xl">
                     {value}
                   </p>
                   <p className="text-xs leading-5 text-muted-foreground">{context}</p>
-                  <p className="mt-2 text-[10px] leading-4 text-muted-foreground">{source}</p>
+                  <p className="mt-2 font-mono text-[10px] leading-4 text-muted-foreground">{source}</p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="trend" className="scroll-mt-16 border-b border-border/60 py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="trend" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
             <SectionHeading
               eyebrow="National trend"
               title="Stunting prevalence in Timor-Leste: progress and 2030 goal"
               description="Two decades of surveys show a plateau since 2016, while the national target sits far below the current path."
             />
             <div className="grid gap-8 lg:grid-cols-[1.8fr_1fr]">
-              <figure className="min-w-0 rounded-xl border border-border/70 bg-card p-4 sm:p-6">
+              <figure className="min-w-0 border-t-2 border-foreground pt-4">
                 <div className="overflow-x-auto">
                   <svg
                     viewBox="0 0 720 292"
@@ -279,7 +279,7 @@ export function StuntingBrief() {
                   </g>
                   <line x1="40" y1="250" x2="700" y2="250" stroke="currentColor" className="text-border" />
                   <line x1="600" y1="107" x2="700" y2="106" stroke="currentColor" strokeDasharray="2 5" className="text-muted-foreground" />
-                  <line x1="600" y1="107" x2="700" y2="221" stroke="#b45309" strokeDasharray="6 5" />
+                  <line x1="600" y1="107" x2="700" y2="221" stroke="var(--rust)" strokeDasharray="6 5" />
                   <polyline
                     points="40,45 64,50 158,36 217,31 294,76 365,103 459,94 553,104 600,107"
                     fill="none"
@@ -305,22 +305,22 @@ export function StuntingBrief() {
                         cx={coordinates[0]}
                         cy={coordinates[1]}
                         r={index === surveyHistory.length - 1 ? 5 : 3}
-                        fill={index === surveyHistory.length - 1 ? "#b45309" : "currentColor"}
+                        fill={index === surveyHistory.length - 1 ? "var(--rust)" : "currentColor"}
                         className={index === surveyHistory.length - 1 ? "" : "text-foreground"}
                       >
                         <title>{`${point.year}: ${point.value}%`}</title>
                       </circle>
                     );
                   })}
-                  <circle cx="700" cy="221" r="4" fill="#b45309">
+                  <circle cx="700" cy="221" r="4" fill="var(--rust)">
                     <title>PANKOS target: below 25% by 2030</title>
                   </circle>
                   <text x="217" y="20" textAnchor="middle" fill="currentColor" className="font-mono text-[11px]">58.1%</text>
                   <text x="294" y="94" textAnchor="middle" fill="currentColor" className="font-mono text-[11px]">50.2%</text>
                   <text x="365" y="123" textAnchor="middle" fill="currentColor" className="font-mono text-[11px]">45.6%</text>
                   <text x="459" y="84" textAnchor="middle" fill="currentColor" className="font-mono text-[11px]">47.1%</text>
-                  <text x="600" y="93" textAnchor="middle" fill="#b45309" className="font-mono text-[11px] font-semibold">44.9%</text>
-                  <text x="700" y="240" textAnchor="end" fill="#b45309" className="font-mono text-[11px]">below 25% by 2030</text>
+                  <text x="600" y="93" textAnchor="middle" fill="var(--rust-ink)" className="font-mono text-[11px] font-semibold">44.9%</text>
+                  <text x="700" y="240" textAnchor="end" fill="var(--rust-ink)" className="font-mono text-[11px]">below 25% by 2030</text>
                   <text x="692" y="99" textAnchor="end" fill="currentColor" className="font-mono text-[11px] text-muted-foreground">at recent pace</text>
                   </svg>
                 </div>
@@ -357,8 +357,8 @@ export function StuntingBrief() {
           </div>
         </section>
 
-        <section id="geography" className="scroll-mt-16 border-b border-border/60 py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="geography" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
             <SectionHeading
               eyebrow="Unequal burden"
               title="Child stunting by municipality in Timor-Leste"
@@ -391,8 +391,8 @@ export function StuntingBrief() {
           </div>
         </section>
 
-        <section id="causes" className="scroll-mt-16 border-b border-border/60 py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="causes" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
             <SectionHeading
               eyebrow="UNICEF framework"
               title="Causes of child malnutrition in Timor-Leste"
@@ -425,8 +425,8 @@ export function StuntingBrief() {
                   ],
                 },
               ].map(({ tier, items }) => (
-                <article key={tier} className="border-t-2 border-border pt-4">
-                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-400">
+                <article key={tier} className="border-t-2 border-foreground pt-4">
+                  <h3 className="mb-4 font-mono text-xs font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
                     {tier}
                   </h3>
                   <ul className="space-y-4">
@@ -442,8 +442,8 @@ export function StuntingBrief() {
           </div>
         </section>
 
-        <section id="interventions" className="scroll-mt-16 border-b border-border/60 py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="interventions" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
             <SectionHeading
               eyebrow="Evidence and investment"
               title="Evidence-based nutrition actions and costs"
@@ -465,8 +465,8 @@ export function StuntingBrief() {
                   ))}
                 </ul>
               </div>
-              <aside className="border border-border border-t-2 border-t-amber-700 bg-card p-5 sm:p-7">
-                <p className="text-4xl font-semibold tracking-tight text-amber-700 dark:text-amber-400 sm:text-5xl">
+              <aside className="border-t-2 border-[var(--rust)] pt-5 sm:pt-7">
+                <p className="text-4xl font-semibold tracking-tight tabular-nums text-[var(--rust)] sm:text-5xl">
                   $1 → $23
                 </p>
                 <p className="mt-3 max-w-lg text-sm leading-6 text-muted-foreground">
@@ -490,10 +490,10 @@ export function StuntingBrief() {
           </div>
         </section>
 
-        <section id="feedback" className="scroll-mt-16 py-12 sm:py-16">
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+        <section id="feedback" className="scroll-mt-28 border-t border-border py-12 sm:py-14">
+          <div className="mx-auto grid max-w-[1180px] gap-8 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-amber-800 dark:text-amber-400">
+              <p className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--rust-ink)]">
                 Help improve this brief
               </p>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -504,15 +504,15 @@ export function StuntingBrief() {
                 endpoint has been configured; it is never saved in this browser.
               </p>
             </div>
-            <div className="rounded-xl border border-border/70 bg-card p-5 sm:p-7">
+            <div className="border-t-2 border-foreground pt-5 sm:pt-7">
               <StuntingFeedbackForm />
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-border/60 bg-muted/30 py-7">
-        <div className="mx-auto max-w-7xl space-y-3 px-4 text-xs leading-5 text-muted-foreground sm:px-6 lg:px-8">
+      <footer className="border-t border-border py-7">
+        <div className="mx-auto max-w-[1180px] space-y-3 px-5 font-mono text-[10.5px] leading-5 text-muted-foreground sm:px-8">
           <p>
             Compiled October 2026 from “Childhood Stunting in Timor-Leste: Comprehensive Problem
             Identification” (fully referenced). Primary sources: TLDHS 2025–26 Key Indicators
@@ -526,7 +526,7 @@ export function StuntingBrief() {
           </p>
           <Link
             href="/"
-            className="inline-flex min-h-10 items-center font-medium text-foreground underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600"
+            className="inline-flex min-h-11 items-center font-medium text-foreground underline-offset-4 hover:underline"
           >
             Return to the GAR 2025 dashboard
           </Link>

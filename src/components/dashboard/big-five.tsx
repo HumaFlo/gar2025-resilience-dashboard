@@ -28,21 +28,21 @@ const hazardIcons: Record<string, React.ComponentType<{ className?: string }>> =
 };
 
 const trendLabels: Record<string, { label: string; color: string }> = {
-  intensifying: { label: "Intensifying", color: "text-red-700 bg-red-500/15" },
-  worsening: { label: "Worsening", color: "text-orange-700 bg-orange-500/15" },
-  "stable-but-costly": { label: "Stable but Costly", color: "text-amber-700 bg-amber-500/15" },
-  expanding: { label: "Expanding", color: "text-orange-700 bg-orange-500/15" },
-  accelerating: { label: "Accelerating", color: "text-red-700 bg-red-500/15" },
+  intensifying: { label: "Intensifying", color: "text-red-800 bg-red-100" },
+  worsening: { label: "Worsening", color: "text-orange-900 bg-orange-100" },
+  "stable-but-costly": { label: "Stable but Costly", color: "text-amber-900 bg-amber-100" },
+  expanding: { label: "Expanding", color: "text-orange-900 bg-orange-100" },
+  accelerating: { label: "Accelerating", color: "text-red-800 bg-red-100" },
 };
 
 export function BigFiveSection() {
   const totalLosses = bigFiveHazards.reduce((sum, h) => sum + h.shareOfLosses, 0);
 
   return (
-    <section id="big-five" className="scroll-mt-16 border-t">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="big-five" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <Activity className="h-4 w-4" />
             Chapter 4 — Five Hazards Drive 95% of Losses
           </div>
@@ -60,12 +60,12 @@ export function BigFiveSection() {
         {/* Charts row */}
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-5">
           {/* Donut chart - share of losses */}
-          <Card className="lg:col-span-2 p-6">
+          <Card className="lg:col-span-2 border-x-0 border-b-0 p-0 pt-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
               Share of recorded economic losses
             </h3>
             <p className="mt-1 text-xs text-muted-foreground">1970–2023, % of total</p>
-            <div className="mt-4 h-64">
+            <div className="mt-4 h-64" role="img" aria-label="Donut chart of each hazard's share of recorded economic losses from 1970 to 2023">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
@@ -82,7 +82,7 @@ export function BigFiveSection() {
                   </Pie>
                   <Tooltip
                     contentStyle={{
-                      borderRadius: "8px",
+                      borderRadius: "0",
                       border: "1px solid var(--border)",
                       background: "var(--background)",
                       fontSize: "12px",
@@ -107,14 +107,14 @@ export function BigFiveSection() {
           </Card>
 
           {/* Rising costs trend */}
-          <Card className="lg:col-span-3 p-6">
+          <Card className="lg:col-span-3 border-x-0 border-b-0 p-0 pt-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
               Rising direct cost of recorded disasters
             </h3>
             <p className="mt-1 text-xs text-muted-foreground">
               Decade averages, USD billions (1970–2023)
             </p>
-            <div className="mt-4 h-64">
+            <div className="mt-4 h-64" role="img" aria-label="Bar chart of average annual recorded direct disaster costs by decade from 1970 to 2023, in billions of US dollars">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={risingCostsTrend} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" opacity={0.4} />
@@ -122,14 +122,14 @@ export function BigFiveSection() {
                   <YAxis tick={{ fontSize: 10 }} stroke="var(--muted-foreground)" />
                   <Tooltip
                     contentStyle={{
-                      borderRadius: "8px",
+                      borderRadius: "0",
                       border: "1px solid var(--border)",
                       background: "var(--background)",
                       fontSize: "12px",
                     }}
                     formatter={(v: number) => [`$${v}B`, "Direct cost"]}
                   />
-                  <Bar dataKey="directCost" radius={[6, 6, 0, 0]} fill="var(--chart-1)" />
+                  <Bar dataKey="directCost" fill="var(--chart-1)" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -153,10 +153,10 @@ export function BigFiveSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
               >
-                <Card className="h-full p-4 transition-all hover:shadow-md hover:-translate-y-0.5">
+                <Card className="h-full border-x-0 border-b-0 p-0 pt-4 transition-colors">
                   <div className="flex items-start justify-between gap-2">
                     <div
-                      className="flex h-9 w-9 items-center justify-center rounded-lg"
+                      className="flex h-9 w-9 items-center justify-center"
                       style={{ background: `${hazard.color}20`, color: hazard.color }}
                     >
                       <Icon className="h-4.5 w-4.5" />
@@ -194,7 +194,7 @@ export function BigFiveSection() {
           })}
         </div>
 
-        <p className="mt-4 text-xs text-muted-foreground">
+        <p className="mt-4 border-t border-border pt-4 text-xs text-muted-foreground">
           Combined, the Big Five account for <span className="font-semibold">{totalLosses}%</span> of recorded
           economic losses from disasters (1970–2023). Other hazards — volcanic, landslide, wildfire, and
           biological — make up the remainder.

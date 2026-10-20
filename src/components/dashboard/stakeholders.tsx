@@ -33,11 +33,11 @@ export function StakeholderSection() {
   return (
     <section
       id="stakeholders"
-      className="scroll-mt-16 border-t bg-gradient-to-b from-background to-amber-500/5"
+      className="scroll-mt-32 border-t border-border"
     >
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <Users className="h-4 w-4" />
             Multi-Stakeholder Decision Pathways
           </div>
@@ -52,18 +52,48 @@ export function StakeholderSection() {
         </div>
 
         {/* Stakeholder selector tabs */}
-        <div className="mt-8 flex flex-wrap gap-2">
+        <div
+          role="tablist"
+          aria-label="Stakeholder decision pathways"
+          className="mt-8 flex flex-wrap gap-2"
+          onKeyDown={(event) => {
+            const tabs = Array.from(
+              event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]')
+            );
+            const currentIndex = tabs.findIndex((tab) => tab === document.activeElement);
+            const nextIndex =
+              event.key === "Home"
+                ? 0
+                : event.key === "End"
+                  ? tabs.length - 1
+                  : event.key === "ArrowRight"
+                    ? (currentIndex + 1) % tabs.length
+                    : event.key === "ArrowLeft"
+                      ? (currentIndex - 1 + tabs.length) % tabs.length
+                      : -1;
+            if (nextIndex < 0) return;
+            event.preventDefault();
+            tabs[nextIndex].focus();
+            tabs[nextIndex].click();
+          }}
+        >
           {stakeholderPathways.map((s) => {
             const Icon = stakeholderIcons[s.id] ?? Users;
             const isActive = activeId === s.id;
             return (
               <button
                 key={s.id}
+                id={`stakeholder-tab-${s.id}`}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                aria-controls="stakeholder-panel"
+                tabIndex={isActive ? 0 : -1}
                 onClick={() => setActiveId(s.id)}
-                className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-medium transition-all ${
+                className={`inline-flex min-h-11 items-center gap-2 border px-4 py-2 text-xs font-medium transition-colors ${
                   isActive
-                    ? "border-amber-500 bg-amber-500/15 text-amber-900 dark:text-amber-100 shadow-sm"
-                    : "border-border/60 bg-background text-muted-foreground hover:border-amber-500/40 hover:bg-amber-500/5"
+                    ? "border-foreground bg-foreground text-background"
+                    : "border-border bg-background text-muted-foreground hover:border-foreground hover:text-foreground"
                 }`}
               >
                 <Icon className="h-3.5 w-3.5" />
@@ -75,6 +105,9 @@ export function StakeholderSection() {
 
         {/* Active stakeholder panel */}
         <motion.div
+          id="stakeholder-panel"
+          role="tabpanel"
+          aria-labelledby={`stakeholder-tab-${active.id}`}
           key={active.id}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,8 +117,8 @@ export function StakeholderSection() {
           <Card className="overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-5">
               {/* Left panel — identity & key stats */}
-              <div className="lg:col-span-2 bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-red-500/5 p-6 sm:p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-red-600 text-white shadow-md">
+              <div className="border-b border-border p-6 sm:p-8 lg:col-span-2 lg:border-b-0 lg:border-r">
+                <div className="flex h-14 w-14 items-center justify-center border border-border text-[var(--rust-ink)]">
                   <ActiveIcon className="h-7 w-7" />
                 </div>
                 <h3 className="mt-4 text-xl font-bold tracking-tight">{active.label}</h3>
@@ -99,10 +132,7 @@ export function StakeholderSection() {
                     Key statistics for your lens
                   </p>
                   {active.keyStats.map((stat) => (
-                    <div
-                      key={stat}
-                      className="rounded-lg border border-border/60 bg-background/80 p-3 text-sm font-medium"
-                    >
+                    <div key={stat} className="border-t border-border py-3 text-sm font-medium">
                       {stat}
                     </div>
                   ))}
@@ -117,7 +147,7 @@ export function StakeholderSection() {
                 <ol className="mt-3 space-y-3">
                   {active.actions.map((action, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-amber-500/15 text-xs font-bold text-amber-700 dark:text-amber-300">
+                      <span                       className="flex h-6 w-6 flex-shrink-0 items-center justify-center border border-border font-mono text-xs font-bold text-[var(--rust-ink)]">
                         {i + 1}
                       </span>
                       <p className="text-sm text-muted-foreground leading-relaxed pt-0.5">{action}</p>
@@ -134,7 +164,7 @@ export function StakeholderSection() {
                       <a
                         key={area.id}
                         href="#actions"
-                        className="group rounded-lg border border-border/60 p-3 transition-all hover:border-amber-500/40 hover:bg-amber-500/5"
+                        className="group border-t border-border p-3 transition-colors hover:border-foreground"
                       >
                         <div className="flex items-center gap-2">
                           <span
@@ -161,7 +191,7 @@ export function StakeholderSection() {
 
         {/* Cross-stakeholder matrix */}
         <Card className="mt-8 overflow-hidden">
-          <div className="border-b border-border/60 bg-muted/30 px-6 py-3">
+          <div className="border-b border-border px-6 py-3">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
               Action area × stakeholder matrix
             </h3>

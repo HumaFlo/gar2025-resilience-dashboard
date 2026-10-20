@@ -8,10 +8,10 @@ import { RefreshCw, AlertCircle, ArrowRight, Lightbulb } from "lucide-react";
 
 export function SpiralsSection() {
   return (
-    <section id="spirals" className="scroll-mt-16 border-t bg-gradient-to-b from-background to-red-500/5">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="spirals" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-red-700 dark:text-red-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <RefreshCw className="h-4 w-4" />
             Chapter 6 — Three Negative Spirals
           </div>
@@ -36,17 +36,12 @@ export function SpiralsSection() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Card className="relative h-full overflow-hidden border-l-4 p-6" style={{ borderLeftColor: spiral.color }}>
-                <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full opacity-10" style={{ background: spiral.color }} />
-
-                <div className="relative flex items-start justify-between">
-                  <div
-                    className="flex h-12 w-12 items-center justify-center rounded-full text-xl font-bold text-white shadow-md"
-                    style={{ background: spiral.color }}
-                  >
+              <Card className="h-full border-x-0 border-b-0 p-0 pt-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex h-11 w-11 items-center justify-center border border-border font-mono text-xl font-semibold text-foreground">
                     {spiral.number}
                   </div>
-                  <RefreshCw className="h-5 w-5 animate-spin-slow text-muted-foreground/40" style={{ animationDuration: "6s" }} />
+                  <RefreshCw aria-hidden="true" className="h-5 w-5 text-muted-foreground" />
                 </div>
 
                 <h3 className="mt-4 text-lg font-semibold leading-tight">{spiral.title}</h3>
@@ -73,7 +68,7 @@ export function SpiralsSection() {
                   </ul>
                 </div>
 
-                <div className="mt-4 rounded-lg border border-border/60 bg-muted/40 p-3">
+                <div className="mt-4 border-t border-border pt-3">
                   <p className="text-[11px] uppercase tracking-wider font-semibold text-muted-foreground">
                     Consequence
                   </p>
@@ -81,10 +76,10 @@ export function SpiralsSection() {
                 </div>
 
                 {/* Breaker */}
-                <div className="mt-4 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-4">
+                <div className="mt-4 border-t-2 border-emerald-700 pt-4">
                   <div className="flex items-center gap-2">
-                    <Lightbulb className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                    <p className="text-[11px] uppercase tracking-wider font-semibold text-emerald-700 dark:text-emerald-400">
+                    <Lightbulb className="h-4 w-4 text-[var(--green)]" />
+                    <p className="font-mono text-[11px] uppercase tracking-wider font-semibold text-[var(--green)]">
                       Breaker · {spiral.breaker}
                     </p>
                   </div>
@@ -93,7 +88,7 @@ export function SpiralsSection() {
                   </p>
                   <a
                     href="#actions"
-                    className="mt-3 inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 hover:underline dark:text-emerald-400"
+                    className="mt-3 inline-flex min-h-11 items-center gap-1 text-[11px] font-semibold text-[var(--green)] hover:underline"
                   >
                     See action area
                     <ArrowRight className="h-3 w-3" />
@@ -105,9 +100,9 @@ export function SpiralsSection() {
         </div>
 
         {/* Connector callout */}
-        <Card className="mt-8 border-red-500/30 bg-red-500/5 p-6">
+        <Card className="mt-8 border-x-0 border-b-0 border-t-2 border-t-[var(--rust)] p-0 pt-5">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <RefreshCw className="h-8 w-8 text-red-600 flex-shrink-0" />
+            <RefreshCw className="h-8 w-8 text-[var(--rust-ink)] flex-shrink-0" />
             <div>
               <h3 className="text-base font-semibold">The spirals compound one another</h3>
               <p className="mt-1 text-sm text-muted-foreground">

@@ -1,17 +1,6 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -34,6 +23,11 @@ export const metadata: Metadata = {
   authors: [{ name: "UNDRR — source report" }],
 };
 
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#FAF9F7",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,9 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
+      <body className="bg-background text-foreground antialiased">
         {children}
         <Toaster />
       </body>
