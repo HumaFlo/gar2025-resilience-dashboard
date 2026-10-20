@@ -33,7 +33,9 @@ export function WorldRiskMap({ height = 680 }: Props) {
     let cancelled = false;
     async function loadMap() {
       try {
-        const res = await fetch("/geo/world.json");
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/geo/world.json`
+        );
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const geo = await res.json();
         if (cancelled) return;
