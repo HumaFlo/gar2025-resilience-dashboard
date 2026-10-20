@@ -103,6 +103,21 @@ of pretending the submission succeeded. Client-side required and length validati
 honeypot field, and a pending/disabled submit state help guard against invalid, automated, or
 duplicate submissions.
 
+### Search engine submission
+
+After the Pages deployment is live:
+
+1. Add and verify `https://humaflo.github.io/gar2025-resilience-dashboard/` as a URL-prefix
+   property in Google Search Console.
+2. Submit `https://humaflo.github.io/gar2025-resilience-dashboard/sitemap.xml` in the Search
+   Console Sitemaps report. Use URL Inspection on the canonical stunting brief URL and request
+   indexing.
+3. In Bing Webmaster Tools, add the site and submit the same sitemap URL.
+
+The sitemap lists the dashboard and the stunting brief. The brief uses a canonical URL and
+social metadata for its deployed GitHub Pages address; indexing and search appearance are
+controlled by the search engines.
+
 ## Deploy to GitHub Pages
 
 The `Deploy to GitHub Pages` workflow builds the app as a static Next.js export and publishes it

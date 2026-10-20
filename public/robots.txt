@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://humaflo.github.io/gar2025-resilience-dashboard/sitemap.xml
