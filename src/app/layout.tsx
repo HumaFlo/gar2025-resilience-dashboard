@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://humaflo.github.io/gar2025-resilience-dashboard/"
+  ),
   title: "GAR 2025 — Resilience Pays | Policy Intelligence Dashboard",
   description:
     "Multi-stakeholder dashboard transforming the UNDRR Global Assessment Report 2025 into actionable intelligence for policymakers. Direct losses $202B vs true cost $2.3T per year. Six action areas, three negative spirals, and the BCR case for resilience.",

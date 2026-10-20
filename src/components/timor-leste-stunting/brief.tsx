@@ -204,7 +204,7 @@ export function StuntingBrief() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="The scale"
-              title="The crisis at a glance"
+              title="Child stunting and malnutrition in Timor-Leste: key statistics"
               description="Every figure carries its survey year. Highlighted tiles are moving the wrong way."
             />
             <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-6">
@@ -240,7 +240,7 @@ export function StuntingBrief() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="National trend"
-              title="Progress has stalled"
+              title="Stunting prevalence in Timor-Leste: progress and 2030 goal"
               description="Two decades of surveys show a plateau since 2016, while the national target sits far below the current path."
             />
             <div className="grid gap-8 lg:grid-cols-[1.8fr_1fr]">
@@ -361,7 +361,7 @@ export function StuntingBrief() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Unequal burden"
-              title="The burden is concentrated"
+              title="Child stunting by municipality in Timor-Leste"
               description="Second highest in Southeast Asia, and inside the country a child's risk depends heavily on where they are born."
             />
             <div className="grid gap-6 lg:grid-cols-2">
@@ -395,7 +395,7 @@ export function StuntingBrief() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="UNICEF framework"
-              title="Why it persists"
+              title="Causes of child malnutrition in Timor-Leste"
               description="A chain of deprivation runs from the mother's plate to the national purse. Three tiers, UNICEF framework."
             />
             <div className="grid gap-7 md:grid-cols-3">
@@ -446,7 +446,7 @@ export function StuntingBrief() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Evidence and investment"
-              title="What works, and what it costs"
+              title="Evidence-based nutrition actions and costs"
               description="The evidence base is strong, the national plan exists, and the financing gap is small by budget standards."
             />
             <div className="grid gap-8 lg:grid-cols-2">
