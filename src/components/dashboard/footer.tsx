@@ -2,6 +2,7 @@
 
 import { reportMeta } from "@/lib/gar-data";
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 export function DashboardFooter() {
   return (
@@ -21,7 +22,14 @@ export function DashboardFooter() {
             <p className="mt-4 max-w-md text-xs leading-relaxed text-muted-foreground">
               This dashboard transforms the UNDRR Global Assessment Report 2025 ({reportMeta.pages} pages) into
               a multi-stakeholder intelligence layer for evidence-based decision-making. All figures are
-              attributed to source chapters of the underlying report. For feedback reach out to potential101@protonmail.com.
+              attributed to source chapters of the underlying report. For feedback, use the{" "}
+              <Link
+                href="/timor-leste-stunting#feedback"
+                className="text-foreground underline-offset-4 hover:underline"
+              >
+                Timor-Leste brief feedback form
+              </Link>
+              .
             </p>
           </div>
 
@@ -40,6 +48,14 @@ export function DashboardFooter() {
                   UNDRR GAR 2025 (full)
                   <ExternalLink className="h-3 w-3" />
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/timor-leste-stunting"
+                  className="text-foreground hover:text-amber-700 dark:hover:text-amber-400"
+                >
+                  Childhood stunting in Timor-Leste
+                </Link>
               </li>
               <li className="text-muted-foreground">{reportMeta.publisher}</li>
               <li className="text-muted-foreground">Creative Commons CC BY-NC 3.0 IGO</li>

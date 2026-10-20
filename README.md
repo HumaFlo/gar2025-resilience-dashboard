@@ -81,7 +81,43 @@ bun run build
 bun run start
 ```
 
-## Deploy to Vercel (Recommended, 2 minutes, free)
+## Timor-Leste stunting brief feedback
+
+The brief is available at `/timor-leste-stunting`. Its feedback form uses Formspree because
+the published site is static; feedback is not saved in the browser or sent by a repository
+server.
+
+The configured public form endpoint is `https://formspree.io/f/xdearnlo`. Formspree must have
+`potential101@protonmail.com` set and verified as the notification recipient before submissions
+will reach that inbox. The recipient is configured in Formspree, not included in the page or sent
+by the browser.
+
+To use a different Formspree form, set `NEXT_PUBLIC_FORMSPREE_ENDPOINT` to its public HTTPS
+endpoint in the deployment platform's build environment and rebuild/redeploy. The variable
+overrides the built-in endpoint. It is a public endpoint, not an API key; never put a private
+service key in client-side code. For local testing, set the same variable in an ignored
+`.env.local` file before running `bun run dev`.
+
+If the configured endpoint is invalid, the form reports that feedback has not been sent instead
+of pretending the submission succeeded. Client-side required and length validation, a hidden
+honeypot field, and a pending/disabled submit state help guard against invalid, automated, or
+duplicate submissions.
+
+## Deploy to GitHub Pages
+
+The `Deploy to GitHub Pages` workflow builds the app as a static Next.js export and publishes it
+when changes are pushed to `main`. Pull requests run the same build as a check without publishing.
+The project Pages URL is `https://humaflo.github.io/gar2025-resilience-dashboard/`.
+
+In the repository settings, enable **Pages** with **GitHub Actions** as the build and deployment
+source. The workflow sets the repository base path for static assets and links. The same static
+export build is run locally with:
+
+```bash
+GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/gar2025-resilience-dashboard bunx next build
+```
+
+## Deploy to Vercel (Alternative)
 
 ### Option A: Direct GitHub import (recommended)
 
