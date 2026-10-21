@@ -47,10 +47,10 @@ const directionIcons: Record<string, React.ComponentType<{ className?: string }>
 
 export function SendaiSection() {
   return (
-    <section id="sendai" className="scroll-mt-16 border-t">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="sendai" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <CheckCircle2 className="h-4 w-4" />
             Chapter 1 — Sendai Framework 2015–2030 Progress
           </div>
@@ -79,10 +79,10 @@ export function SendaiSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
               >
-                <Card className="h-full p-5 transition-all hover:shadow-md">
+                <Card className="h-full border-x-0 border-b-0 p-0 pt-4 transition-colors">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex items-center gap-2">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-lg border-2 border-amber-500/50 bg-amber-500/10 font-bold text-amber-700 dark:text-amber-300">
+                      <div className="flex h-9 w-9 items-center justify-center border border-border font-mono font-semibold text-[var(--rust-ink)]">
                         {target.code}
                       </div>
                       <StatusIcon className="h-4 w-4 text-muted-foreground" />
@@ -120,8 +120,12 @@ export function SendaiSection() {
 
                   <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">{target.insight}</p>
 
-                  <p className="mt-2 text-[11px] italic text-amber-800 dark:text-amber-200/80">
-                    ⚠ {target.caveat}
+                  <p className="mt-2 text-[11px] italic text-muted-foreground">
+                    <AlertCircle
+                      aria-hidden="true"
+                      className="mr-1 inline h-3.5 w-3.5 text-[var(--rust-ink)]"
+                    />
+                    {target.caveat}
                   </p>
                 </Card>
               </motion.div>
@@ -131,12 +135,16 @@ export function SendaiSection() {
 
         {/* Trend charts */}
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <Card className="p-6">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
               Countries with multi-hazard early warning systems
             </h3>
             <p className="mt-1 text-xs text-muted-foreground">Target G · 2015 → 2023</p>
-            <div className="mt-4 h-56">
+            <div
+              className="mt-4 h-56"
+              role="group"
+              aria-label="Countries with multi-hazard early warning systems, target G, 2015 to 2023"
+            >
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={mhewsCoverageTrend} margin={{ top: 5, right: 10, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" opacity={0.4} />
@@ -144,7 +152,7 @@ export function SendaiSection() {
                   <YAxis domain={[50, 95]} tick={{ fontSize: 10 }} stroke="var(--muted-foreground)" />
                   <Tooltip
                     contentStyle={{
-                      borderRadius: "8px",
+                      borderRadius: "0",
                       border: "1px solid var(--border)",
                       background: "var(--background)",
                       fontSize: "12px",
@@ -168,12 +176,16 @@ export function SendaiSection() {
             </p>
           </Card>
 
-          <Card className="p-6">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
               National DRR strategies — quantity &amp; quality
             </h3>
             <p className="mt-1 text-xs text-muted-foreground">Target E · 2015 → 2023</p>
-            <div className="mt-4 h-56">
+            <div
+              className="mt-4 h-56"
+              role="group"
+              aria-label="National disaster risk reduction strategies by total and high-quality scores, target E, 2015 to 2023"
+            >
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={nationalDRRStrategiesTrend} margin={{ top: 5, right: 10, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" opacity={0.4} />
@@ -181,7 +193,7 @@ export function SendaiSection() {
                   <YAxis tick={{ fontSize: 10 }} stroke="var(--muted-foreground)" />
                   <Tooltip
                     contentStyle={{
-                      borderRadius: "8px",
+                      borderRadius: "0",
                       border: "1px solid var(--border)",
                       background: "var(--background)",
                       fontSize: "12px",

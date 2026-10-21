@@ -115,11 +115,11 @@ export function StuntingFeedbackForm() {
           ].map(([value, label]) => (
             <label
               key={value}
-              className={`flex min-w-16 cursor-pointer flex-col items-center rounded-lg border px-3 py-2 text-sm transition-colors ${
+              className={`flex min-h-11 min-w-16 cursor-pointer flex-col items-center border px-3 py-2 text-sm transition-colors ${
                 rating === value
                   ? "border-foreground bg-foreground text-background"
-                  : "border-border bg-background hover:border-amber-600"
-              } focus-within:outline-none focus-within:ring-2 focus-within:ring-amber-600 focus-within:ring-offset-2`}
+                  : "border-border bg-background hover:border-[var(--rust)]"
+              } focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--rust-ink)] focus-within:ring-offset-2`}
             >
               <input
                 className="sr-only"
@@ -157,7 +157,7 @@ export function StuntingFeedbackForm() {
           aria-describedby="stunting-feedback-hint stunting-feedback-count"
           aria-invalid={status?.kind === "error" && message.trim().length < 10}
           placeholder="Missing numbers, wrong emphasis, layout problems, or questions about the data"
-          className="min-h-32 w-full resize-y rounded-lg border border-input bg-background px-3 py-2.5 text-sm shadow-sm outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
+          className="min-h-32 w-full resize-y border border-input bg-background px-3 py-2.5 text-sm outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-[var(--rust-ink)] focus-visible:ring-offset-2"
         />
         <div className="flex flex-wrap justify-between gap-2 text-xs text-muted-foreground">
           <p id="stunting-feedback-hint">
@@ -186,13 +186,13 @@ export function StuntingFeedbackForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="inline-flex min-h-11 items-center justify-center rounded-lg bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-foreground/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-60"
+        className="inline-flex min-h-11 items-center justify-center border border-foreground bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-foreground/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--rust-ink)] focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-60"
       >
         {submitting ? "Submitting…" : "Submit feedback"}
       </button>
 
       {!isFormspreeEndpoint(endpoint) && !status && (
-        <p role="status" className="text-sm text-amber-800 dark:text-amber-400">
+        <p role="status" className="text-sm text-[var(--rust-ink)]">
           This form is not configured yet. Feedback cannot be sent until the site owner sets
           NEXT_PUBLIC_FORMSPREE_ENDPOINT.
         </p>
@@ -202,7 +202,7 @@ export function StuntingFeedbackForm() {
         aria-live={status?.kind === "error" ? "assertive" : "polite"}
         className={`min-h-6 text-sm ${
           status?.kind === "success"
-            ? "text-green-700 dark:text-green-400"
+            ? "text-[var(--green)]"
             : status?.kind === "error"
               ? "text-destructive"
               : "text-muted-foreground"

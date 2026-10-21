@@ -32,12 +32,12 @@ export function DashboardWithTabs() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       {/* Top-level tab bar (single header — no duplicate logo/title below) */}
-      <div className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-14 items-center justify-between gap-4">
+      <div className="sticky top-0 z-50 border-b border-border bg-background">
+        <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
+          <div className="flex min-h-16 items-center justify-between gap-4">
             {/* Logo + brand (single occurrence) */}
             <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 via-orange-600 to-red-700 text-white shadow-md">
+              <div className="flex h-8 w-8 items-center justify-center border border-border text-[var(--rust-ink)]">
                 <Globe2 className="h-5 w-5" />
               </div>
               <div className="leading-tight">
@@ -53,7 +53,7 @@ export function DashboardWithTabs() {
               <Button
                 variant="outline"
                 size="sm"
-                className="hidden md:inline-flex h-8 text-xs"
+                className="hidden md:inline-flex min-h-11 text-xs"
                 asChild
               >
                 <a href={reportMeta.url} target="_blank" rel="noopener noreferrer">
@@ -63,30 +63,60 @@ export function DashboardWithTabs() {
                 </a>
               </Button>
 
-              <div className="flex items-center gap-1 rounded-full bg-muted p-1">
+              <div
+                role="tablist"
+                aria-label="Dashboard views"
+                className="flex items-center gap-1 border border-border p-1"
+                onKeyDown={(event) => {
+                  const tabs = Array.from(
+                    event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]')
+                  );
+                  const currentIndex = tabs.findIndex((tab) => tab === document.activeElement);
+                  const nextIndex =
+                    event.key === "Home"
+                      ? 0
+                      : event.key === "End"
+                        ? tabs.length - 1
+                        : event.key === "ArrowRight"
+                          ? (currentIndex + 1) % tabs.length
+                          : event.key === "ArrowLeft"
+                            ? (currentIndex - 1 + tabs.length) % tabs.length
+                            : -1;
+                  if (nextIndex < 0) return;
+                  event.preventDefault();
+                  tabs[nextIndex].focus();
+                  tabs[nextIndex].click();
+                }}
+              >
                 <TabButton
                   active={activeTab === "dashboard"}
                   onClick={() => setActiveTab("dashboard")}
                   icon={<LayoutDashboard className="h-3.5 w-3.5" />}
                   label="Policy Dashboard"
+                  id="dashboard-tab"
+                  controls="dashboard-panel"
                 />
                 <TabButton
                   active={activeTab === "map"}
                   onClick={() => setActiveTab("map")}
                   icon={<Globe2 className="h-3.5 w-3.5" />}
                   label="World Risk Map (3D)"
+                  id="map-tab"
+                  controls="map-panel"
                 />
               </div>
             </div>
           </div>
         </div>
-        <div className="h-px bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
       </div>
 
       {/* Tab content */}
       <main className="flex-1">
         {activeTab === "dashboard" && (
           <motion.div
+            id="dashboard-panel"
+            role="tabpanel"
+            aria-labelledby="dashboard-tab"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -108,6 +138,9 @@ export function DashboardWithTabs() {
 
         {activeTab === "map" && (
           <motion.div
+            id="map-panel"
+            role="tabpanel"
+            aria-labelledby="map-tab"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -127,20 +160,30 @@ function TabButton({
   onClick,
   icon,
   label,
+  id,
+  controls,
 }: {
   active: boolean;
   onClick: () => void;
   icon: React.ReactNode;
   label: string;
+  id: string;
+  controls: string;
 }) {
   return (
     <button
+      id={id}
+      type="button"
+      role="tab"
+      aria-selected={active}
+      aria-controls={controls}
+      tabIndex={active ? 0 : -1}
       onClick={onClick}
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all",
+        "inline-flex min-h-11 items-center gap-1.5 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-colors",
         active
-          ? "bg-gradient-to-r from-amber-500 to-orange-600 text-white shadow-md"
-          : "text-muted-foreground hover:text-foreground hover:bg-background/60"
+          ? "bg-foreground text-background"
+          : "text-muted-foreground hover:text-foreground"
       )}
     >
       {icon}
@@ -152,10 +195,10 @@ function TabButton({
 
 function WorldMapSection() {
   return (
-    <section id="world-map" className="scroll-mt-16 border-t bg-gradient-to-b from-background via-amber-500/5 to-background">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+    <section id="world-map" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-10 sm:px-8 sm:py-12">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <Globe2 className="h-4 w-4" />
             All Key Stats · One Map · 3D Visualization
           </div>
@@ -173,9 +216,9 @@ function WorldMapSection() {
         <div className="mt-8">
           <Suspense
             fallback={
-              <div className="flex h-96 items-center justify-center rounded-lg border border-border/60 bg-muted/30">
+              <div className="flex h-96 items-center justify-center border-y border-border bg-muted/30">
                 <div className="text-center">
-                  <div className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-amber-500 border-t-transparent" />
+                  <div className="mx-auto h-10 w-10 animate-spin border-2 border-[var(--rust)] border-t-transparent" />
                   <p className="mt-3 text-sm text-muted-foreground">Loading 3D map visualization…</p>
                 </div>
               </div>
@@ -186,7 +229,7 @@ function WorldMapSection() {
         </div>
 
         {/* Methodology note */}
-        <div className="mt-6 rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 text-xs text-muted-foreground">
+        <div className="mt-6 border-t border-border py-4 text-xs text-muted-foreground">
           <p>
             <span className="font-semibold">Methodology & sources:</span> Bar heights and colors are scaled
             to the selected metric&apos;s range. Country coordinates are approximate centroids. Data points

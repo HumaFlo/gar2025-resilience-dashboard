@@ -130,15 +130,17 @@ export function WorldRiskMap({ height = 680 }: Props) {
               const origValue = (p.value[2] - 2) / barHeightScale + minVal;
               return `${p.name}\n${metric.shortLabel}: ${formatValue(origValue, metric.unit)}`;
             },
-            color: "#fff",
-            backgroundColor: "#1f2937",
+            color: "#1c1917",
+            backgroundColor: "#faf9f7",
+            borderColor: "#d6d3d1",
+            borderWidth: 1,
             padding: [4, 8],
             borderRadius: 4,
             fontSize: 11,
             fontWeight: "bold",
           },
           itemStyle: {
-            color: "#fbbf24",
+            color: "#c2410c",
           },
         },
       } as echarts.SeriesOption);
@@ -156,7 +158,7 @@ export function WorldRiskMap({ height = 680 }: Props) {
         itemStyle: {
           color: d.itemStyle.color,
           opacity: 0.9,
-          borderColor: "#fff",
+          borderColor: "#faf9f7",
           borderWidth: 0.5,
         },
       })),
@@ -171,8 +173,10 @@ export function WorldRiskMap({ height = 680 }: Props) {
             const origValue = (p.value[2]);
             return `${p.name}: ${formatValue(origValue, metric.unit)}`;
           },
-          color: "#fff",
-          backgroundColor: "#1f2937",
+          color: "#1c1917",
+          backgroundColor: "#faf9f7",
+          borderColor: "#d6d3d1",
+          borderWidth: 1,
           padding: [3, 6],
           borderRadius: 3,
           fontSize: 10,
@@ -189,19 +193,19 @@ export function WorldRiskMap({ height = 680 }: Props) {
           if (!country) return p.name;
           const val = (country as unknown as Record<MapMetric, number>)[activeMetric];
           return `
-            <div style="font-weight:600;margin-bottom:4px">${country.name}</div>
-            <div style="font-size:11px;color:#666">${country.region} · ${country.group}</div>
+            <div style="font-weight:600;margin-bottom:4px;color:#1c1917">${country.name}</div>
+            <div style="font-size:11px;color:#57534e">${country.region} · ${country.group}</div>
             <div style="margin-top:6px;font-size:12px">
               <strong style="color:${getColorForValue(val, metric.colorStops)}">${formatValue(val, metric.unit)}</strong> ${metric.shortLabel}
             </div>
-            <div style="margin-top:4px;font-size:10px;color:#888">
+            <div style="margin-top:4px;font-size:10px;color:#57534e">
               Direct losses: $${country.directLosses}B/yr<br/>
               % of GDP: ${country.pctGDP}%<br/>
               Mortality: ${country.mortality}/100k<br/>
               MHEWS: ${country.mhews}%<br/>
               Flood Δ 2050: ${country.floodFuture > 0 ? "+" : ""}${country.floodFuture}%
             </div>
-            ${country.notes ? `<div style="margin-top:4px;font-size:10px;font-style:italic;color:#888">${country.notes}</div>` : ""}
+            ${country.notes ? `<div style="margin-top:4px;font-size:10px;font-style:italic;color:#78716c">${country.notes}</div>` : ""}
           `;
         },
       },
@@ -237,20 +241,20 @@ export function WorldRiskMap({ height = 680 }: Props) {
           enable: false,
         },
         // 3D environment
-        environment: "#f8fafc",
+        environment: "#faf9f7",
         // Map styling
         itemStyle: {
-          color: "#cbd5e1",
+          color: "#e7e5e4",
           opacity: 0.85,
           borderWidth: 0.5,
-          borderColor: "#94a3b8",
+          borderColor: "#d6d3d1",
         },
         label: {
           show: false,
         },
         emphasis: {
           itemStyle: {
-            color: "#fde68a",
+            color: "#f6e3d7",
             opacity: 1,
           },
           label: {
@@ -284,11 +288,11 @@ export function WorldRiskMap({ height = 680 }: Props) {
   return (
     <div className="space-y-4">
       {/* Control bar */}
-      <Card className="p-4">
+      <Card className="border-x-0 border-b-0 p-0 pt-4">
         <div className="flex flex-col gap-4">
           {/* Metric selector */}
-          <div>
-            <div className="mb-2 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+          <div aria-labelledby="risk-metric-label">
+            <div id="risk-metric-label" className="mb-2 flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
               <Layers className="h-3.5 w-3.5" />
               Select Risk Metric (drives bar height & color)
             </div>
@@ -300,11 +304,13 @@ export function WorldRiskMap({ height = 680 }: Props) {
                     key={m.id}
                     variant={isActive ? "default" : "outline"}
                     size="sm"
-                    className={`h-8 text-xs ${
+                    className={`min-h-11 text-xs ${
                       isActive
-                        ? "bg-amber-600 hover:bg-amber-700 text-white"
-                        : "hover:border-amber-500/40"
+                        ? "border-foreground bg-foreground text-background hover:bg-foreground/90"
+                        : "hover:border-foreground"
                     }`}
+                    aria-pressed={isActive}
+                    aria-label={`Show ${m.label}`}
                     onClick={() => setActiveMetric(m.id)}
                   >
                     {m.shortLabel}
@@ -314,7 +320,7 @@ export function WorldRiskMap({ height = 680 }: Props) {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 border-t border-border/60 pt-3">
+          <div className="flex flex-wrap items-center gap-4 border-t border-border pt-3">
             {/* 3D bars toggle */}
             <div className="flex items-center gap-2">
               <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
@@ -323,7 +329,8 @@ export function WorldRiskMap({ height = 680 }: Props) {
               <Button
                 variant={showBars ? "secondary" : "ghost"}
                 size="sm"
-                className="h-7 text-xs"
+                className="min-h-11 text-xs"
+                aria-pressed={showBars}
                 onClick={() => setShowBars(!showBars)}
               >
                 <BarChart3 className="h-3.5 w-3.5 mr-1.5" />
@@ -341,7 +348,8 @@ export function WorldRiskMap({ height = 680 }: Props) {
                   key={g}
                   variant={groupFilter === g ? "secondary" : "ghost"}
                   size="sm"
-                  className="h-7 text-xs"
+                  className="min-h-11 text-xs"
+                  aria-pressed={groupFilter === g}
                   onClick={() => setGroupFilter(g)}
                 >
                   {g === "all" ? "All Countries" : g}
@@ -360,12 +368,16 @@ export function WorldRiskMap({ height = 680 }: Props) {
       {/* Map + side panel */}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
         {/* Chart */}
-        <Card className="lg:col-span-3 overflow-hidden p-0">
-          <div className="relative">
+        <Card className="lg:col-span-3 overflow-hidden border-x-0 border-b-0 p-0">
+          <div
+            className="relative"
+            role="group"
+            aria-label={`${mapMetrics.find((m) => m.id === activeMetric)?.label} interactive 3D world map. Use the metric and country-group controls above to change the display.`}
+          >
             {loadError && (
               <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
                 <div className="text-center">
-                  <p className="text-sm font-semibold text-red-700">Failed to load map data</p>
+                  <p className="text-sm font-semibold text-[var(--rust-ink)]">Failed to load map data</p>
                   <p className="text-xs text-muted-foreground mt-1">{loadError}</p>
                 </div>
               </div>
@@ -373,7 +385,7 @@ export function WorldRiskMap({ height = 680 }: Props) {
             {!geoLoaded && !loadError && (
               <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
                 <div className="text-center">
-                  <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-amber-500 border-t-transparent" />
+                  <div className="mx-auto h-8 w-8 animate-spin border-2 border-[var(--rust)] border-t-transparent" />
                   <p className="mt-2 text-sm text-muted-foreground">Loading world map…</p>
                 </div>
               </div>
@@ -395,7 +407,7 @@ export function WorldRiskMap({ height = 680 }: Props) {
             />
           </div>
           {/* Caption */}
-          <div className="border-t border-border/60 bg-muted/30 px-4 py-2">
+          <div className="border-t border-border px-4 py-3">
             <p className="text-[10px] text-muted-foreground">
               <span className="font-semibold">Tip:</span> Hover over a bar/country for detailed stats. Right-click
               and drag to pan the map. Click and drag (left) to rotate. Scroll to zoom.
@@ -406,7 +418,7 @@ export function WorldRiskMap({ height = 680 }: Props) {
         {/* Side panel — legend, top countries, insights */}
         <div className="space-y-4">
           {/* Legend */}
-          <Card className="p-4">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               {mapMetrics.find((m) => m.id === activeMetric)?.shortLabel}
             </h3>
@@ -426,9 +438,9 @@ export function WorldRiskMap({ height = 680 }: Props) {
           </Card>
 
           {/* Top 5 countries by current metric */}
-          <Card className="p-4">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <div className="flex items-center gap-1.5">
-              <TrendingUp className="h-3.5 w-3.5 text-amber-600" />
+              <TrendingUp className="h-3.5 w-3.5 text-[var(--rust-ink)]" />
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Top 5 by {mapMetrics.find((m) => m.id === activeMetric)?.shortLabel}
               </h3>
@@ -442,9 +454,9 @@ export function WorldRiskMap({ height = 680 }: Props) {
           </Card>
 
           {/* Quick stats */}
-          <Card className="p-4 bg-gradient-to-br from-amber-500/5 to-orange-500/5 border-amber-500/30">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <div className="flex items-center gap-1.5">
-              <Globe2 className="h-3.5 w-3.5 text-amber-600" />
+              <Globe2 className="h-3.5 w-3.5 text-[var(--rust-ink)]" />
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Global snapshot
               </h3>
@@ -473,7 +485,7 @@ function LegendGradient({ colorStops, unit }: { colorStops: [number, string][]; 
   return (
     <div className="mt-3">
       <div
-        className="h-3 w-full rounded-full border border-border/60"
+        className="h-3 w-full border border-border"
         style={{ background: gradient }}
       />
       <div className="mt-1 flex justify-between text-[10px] text-muted-foreground tabular-nums">
@@ -525,9 +537,9 @@ function TopCountries({
                 {formatValue(c.value, unit)}
               </span>
             </div>
-            <div className="h-1.5 w-full rounded-full bg-muted overflow-hidden">
+            <div className="h-1.5 w-full bg-muted overflow-hidden">
               <div
-                className="h-full rounded-full transition-all"
+                className="h-full transition-all"
                 style={{ width: `${pct}%`, background: color }}
               />
             </div>

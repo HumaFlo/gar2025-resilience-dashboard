@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export function DashboardFooter() {
   return (
-    <footer className="mt-auto border-t border-border/60 bg-muted/30">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="mt-auto border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-8 sm:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 to-red-700 text-white">
+              <div className="flex h-8 w-8 items-center justify-center border border-border text-[var(--rust-ink)]">
                 <span className="text-xs font-bold">UN</span>
               </div>
               <div>
@@ -43,7 +43,7 @@ export function DashboardFooter() {
                   href={reportMeta.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-foreground hover:text-amber-700 dark:hover:text-amber-400"
+                  className="inline-flex min-h-11 items-center gap-1 text-foreground hover:text-[var(--rust-ink)]"
                 >
                   UNDRR GAR 2025 (full)
                   <ExternalLink className="h-3 w-3" />
@@ -52,7 +52,7 @@ export function DashboardFooter() {
               <li>
                 <Link
                   href="/timor-leste-stunting"
-                  className="text-foreground hover:text-amber-700 dark:hover:text-amber-400"
+                  className="inline-flex min-h-11 items-center text-foreground hover:text-[var(--rust-ink)]"
                 >
                   Childhood stunting in Timor-Leste
                 </Link>

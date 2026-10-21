@@ -49,8 +49,8 @@ export function DashboardHeader() {
   // Sub-navigation bar — section links only (no logo, no title, no brand block)
   // The top-level brand/logo/tabs are owned by <DashboardWithTabs/> in tabs-container.tsx
   return (
-    <div className="sticky top-14 z-40 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <div className="sticky top-16 z-40 w-full border-b border-border bg-background">
+      <div className="mx-auto flex min-h-14 max-w-[1180px] items-center justify-between px-5 sm:px-8">
         {/* Desktop section nav */}
         <nav className="hidden lg:flex items-center gap-1 overflow-x-auto scrollbar-thin">
           {navItems.map((item) => (
@@ -58,7 +58,7 @@ export function DashboardHeader() {
               key={item.id}
               variant={activeSection === item.id ? "secondary" : "ghost"}
               size="sm"
-              className="text-xs h-8 flex-shrink-0"
+              className="min-h-11 flex-shrink-0 text-xs"
               onClick={() => scrollTo(item.id)}
             >
               {item.label}
@@ -69,7 +69,7 @@ export function DashboardHeader() {
         {/* Mobile menu trigger */}
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger asChild>
-            <Button variant="outline" size="sm" className="lg:hidden h-8 w-8 p-0">
+            <Button variant="outline" size="sm" className="lg:hidden h-11 w-11 p-0">
               <Menu className="h-4 w-4" />
               <span className="sr-only">Toggle section navigation menu</span>
             </Button>
@@ -84,7 +84,7 @@ export function DashboardHeader() {
                   key={item.id}
                   variant={activeSection === item.id ? "secondary" : "ghost"}
                   size="sm"
-                  className="justify-start h-9"
+                  className="min-h-11 justify-start"
                   onClick={() => scrollTo(item.id)}
                 >
                   {item.label}
@@ -94,7 +94,7 @@ export function DashboardHeader() {
                 href={reportMeta.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center text-xs text-muted-foreground hover:text-foreground"
+                className="mt-4 inline-flex min-h-11 items-center text-xs text-muted-foreground hover:text-foreground"
               >
                 <ExternalLink className="h-3 w-3 mr-1.5" />
                 Open full UNDRR GAR report
@@ -111,4 +111,3 @@ export function DashboardHeader() {
     </div>
   );
 }
-

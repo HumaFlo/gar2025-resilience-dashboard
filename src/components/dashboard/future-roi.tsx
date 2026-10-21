@@ -12,16 +12,15 @@ import {
   Tooltip,
   CartesianGrid,
   ResponsiveContainer,
-  Cell,
 } from "recharts";
 import { TrendingDown, Rocket, CalendarClock, ArrowUpRight } from "lucide-react";
 
 export function FutureRoiSection() {
   return (
-    <section id="future-roi" className="scroll-mt-16 border-t">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="future-roi" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <CalendarClock className="h-4 w-4" />
             Chapter 5 — Future Risk to 2050 + Chapter 7 — ROI of Resilience
           </div>
@@ -39,7 +38,7 @@ export function FutureRoiSection() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Future income decline chart */}
-          <Card className="p-6">
+          <Card className="border-x-0 border-b-0 p-0 pt-4">
             <div className="flex items-center gap-2">
               <TrendingDown className="h-4 w-4 text-red-600" />
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
@@ -49,7 +48,11 @@ export function FutureRoiSection() {
             <p className="mt-1 text-xs text-muted-foreground">
               Due to climate-related hazards · % decline vs no-climate-change baseline
             </p>
-            <div className="mt-4 h-72">
+            <div
+              className="mt-4 h-72"
+              role="group"
+              aria-label="Projected income decline by region by 2050, percent decline versus no-climate-change baseline"
+            >
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                   data={futureRisk2050.incomeDeclineRegions}
@@ -73,18 +76,14 @@ export function FutureRoiSection() {
                   />
                   <Tooltip
                     contentStyle={{
-                      borderRadius: "8px",
+                      borderRadius: "0",
                       border: "1px solid var(--border)",
                       background: "var(--background)",
                       fontSize: "12px",
                     }}
                     formatter={(v: number) => [`${v}%`, "Income decline"]}
                   />
-                  <Bar dataKey="decline" radius={[0, 4, 4, 0]}>
-                    {futureRisk2050.incomeDeclineRegions.map((entry, i) => (
-                      <Cell key={i} fill={entry.color} />
-                    ))}
-                  </Bar>
+                  <Bar dataKey="decline" fill="var(--chart-1)" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -119,7 +118,7 @@ export function FutureRoiSection() {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 }}
                   >
-                    <Card className="overflow-hidden border-l-4 border-emerald-500/60 p-4">
+                    <Card className="border-x-0 border-b-0 border-t border-emerald-700 p-0 pt-3">
                       <div className="flex items-start justify-between gap-3">
                         <div className="flex-1">
                           <p className="text-sm font-semibold leading-tight">{item.intervention}</p>
@@ -127,10 +126,10 @@ export function FutureRoiSection() {
                         </div>
                         <div className="text-right">
                           <p className="text-xs text-muted-foreground">BCR</p>
-                          <p className="text-xl font-bold tabular-nums text-emerald-700 dark:text-emerald-400">
+                          <p className="text-xl font-semibold tabular-nums text-[var(--green)]">
                             {bcrMultiple.toFixed(1)}:1
                           </p>
-                          <Badge variant="secondary" className="text-[9px] bg-emerald-500/15 text-emerald-700 dark:text-emerald-400">
+                          <Badge variant="secondary" className="text-[9px] bg-transparent text-[var(--green)]">
                             {item.bcrLabel}
                           </Badge>
                         </div>
@@ -148,7 +147,7 @@ export function FutureRoiSection() {
         </div>
 
         {/* Future hazards table */}
-        <Card className="mt-8 p-6">
+        <Card className="mt-8 border-x-0 border-b-0 p-0 pt-4">
           <div className="flex items-center gap-2">
             <CalendarClock className="h-4 w-4 text-amber-600" />
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
@@ -163,9 +162,9 @@ export function FutureRoiSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="rounded-lg border border-border/60 bg-muted/30 p-3"
+                className="border-t border-border p-3"
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+                <p className="font-mono text-xs font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
                   {proj.hazard}
                 </p>
                 <p className="mt-1.5 text-[11px] leading-relaxed text-muted-foreground">
@@ -174,7 +173,7 @@ export function FutureRoiSection() {
               </motion.div>
             ))}
           </div>
-          <div className="mt-4 flex items-center gap-2 rounded-lg bg-emerald-500/10 p-3 text-xs text-emerald-900 dark:text-emerald-100">
+          <div className="mt-4 flex items-center gap-2 border-t border-[var(--green)] py-3 text-xs text-[var(--green)]">
             <ArrowUpRight className="h-4 w-4 flex-shrink-0" />
             <span>
               <span className="font-semibold">Resilience Pays:</span> even modest investments can slow or

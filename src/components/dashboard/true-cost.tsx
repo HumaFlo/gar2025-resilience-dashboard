@@ -13,10 +13,10 @@ export function TrueCostSection() {
   ).toFixed(1);
 
   return (
-    <section id="true-cost" className="scroll-mt-16 border-t bg-gradient-to-b from-background to-amber-500/5">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="true-cost" className="scroll-mt-32 border-t border-border">
+      <div className="mx-auto max-w-[1180px] px-5 py-12 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-[var(--rust-ink)]">
             <Droplets className="h-4 w-4" />
             Chapter 4 — What Disasters Really Cost
           </div>
@@ -35,12 +35,12 @@ export function TrueCostSection() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Iceberg visual */}
-          <Card className="relative overflow-hidden border-amber-500/30 p-0">
+          <Card className="relative overflow-hidden border-x-0 border-b-0 border-t-2 border-t-[var(--rust)] p-0">
             <div className="relative h-full min-h-[28rem] p-6">
-              <div className="absolute inset-x-0 top-0 h-[22%] bg-gradient-to-b from-sky-100 to-sky-200/40 dark:from-sky-900/40 dark:to-sky-900/10" />
-              <div className="absolute inset-x-0 top-[22%] bottom-0 bg-gradient-to-b from-sky-200/30 via-blue-300/20 to-blue-900/30 dark:from-sky-900/30 dark:via-blue-950/40 dark:to-slate-950/60" />
-              <div className="absolute inset-x-0 top-[22%] h-px bg-blue-500/40" />
-              <div className="absolute left-4 top-[20%] text-[10px] uppercase tracking-wider text-blue-700 dark:text-blue-300">
+              <div className="absolute inset-x-0 top-0 h-[22%] bg-[var(--rust-soft)]/40" />
+              <div className="absolute inset-x-0 top-[22%] bottom-0 bg-muted" />
+              <div className="absolute inset-x-0 top-[22%] h-px bg-[var(--rust)]" />
+              <div className="absolute left-4 top-[20%] font-mono text-[10px] uppercase tracking-wider text-[var(--rust-ink)]">
                 Waterline — official reporting stops here
               </div>
 
@@ -50,7 +50,7 @@ export function TrueCostSection() {
                   <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
                     Above the waterline · Direct losses
                   </p>
-                  <p className="text-3xl font-bold text-amber-800 dark:text-amber-200">
+                  <p className="text-3xl font-semibold tabular-nums text-[var(--rust-ink)]">
                     ${costIceberg.visible.value}B / yr
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">{visiblePct}% of true cost</p>
@@ -58,10 +58,10 @@ export function TrueCostSection() {
 
                 {/* Hidden portion */}
                 <div className="flex flex-1 flex-col justify-end gap-2 p-4">
-                  <p className="text-[10px] uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
                     Below the waterline · Indirect & cascading losses
                   </p>
-                  <p className="text-3xl font-bold text-red-700 dark:text-red-300">
+                  <p className="text-3xl font-semibold tabular-nums">
                     ${costIceberg.hidden.value}B / yr
                   </p>
                   <p className="text-xs text-muted-foreground">
@@ -79,7 +79,7 @@ export function TrueCostSection() {
                         className="flex items-center gap-3 text-xs"
                       >
                         <span
-                          className="h-2.5 w-2.5 rounded-sm flex-shrink-0"
+                          className="h-2.5 w-2.5 flex-shrink-0"
                           style={{ background: item.color }}
                         />
                         <span className="flex-1 text-muted-foreground">{item.label}</span>
@@ -94,7 +94,7 @@ export function TrueCostSection() {
 
           {/* Right-side context */}
           <div className="space-y-6">
-            <Card className="p-6 border-amber-500/30 bg-amber-500/5">
+            <Card className="border-x-0 border-b-0 border-t-2 border-t-[var(--rust)] p-0 pt-4">
               <h3 className="text-lg font-semibold">Why this matters for policymakers</h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 The direct-losses figure is what most finance ministries plan against. But it is{" "}
@@ -110,13 +110,13 @@ export function TrueCostSection() {
               </p>
             </Card>
 
-            <Card className="p-6">
+            <Card className="border-x-0 border-b-0 p-0 pt-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Where the &ldquo;missing millions&rdquo; live
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0" style={{ background: "var(--chart-1)" }} />
                   <span>
                     <span className="font-medium">Health & education losses</span> — long-term declines in
                     educational attainment and chronic health burden, e.g. extreme-heat hospital admissions in
@@ -124,28 +124,28 @@ export function TrueCostSection() {
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-500" />
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0" style={{ background: "var(--chart-2)" }} />
                   <span>
                     <span className="font-medium">Livelihoods & informal economy</span> — income losses that never
                     appear in formal GDP accounting but devastate poor households.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" />
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0" style={{ background: "var(--chart-3)" }} />
                   <span>
                     <span className="font-medium">Ecosystems & natural capital</span> — degradation of mangroves,
                     forests, fisheries — buffers that, once lost, amplify future losses.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-yellow-500" />
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0" style={{ background: "var(--chart-4)" }} />
                   <span>
                     <span className="font-medium">Displacement & migration</span> — costs that fall hardest on the
                     poorest and cross borders.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-lime-500" />
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0" style={{ background: "var(--chart-5)" }} />
                   <span>
                     <span className="font-medium">Supply-chain cascades</span> — blackouts from a single tropical
                     cyclone can affect up to 80 million people.
