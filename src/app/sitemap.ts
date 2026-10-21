@@ -10,9 +10,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/`,
       priority: 1,
     },
-    {
-      url: `${siteUrl}/timor-leste-stunting/`,
-      priority: 0.8,
-    },
   ];
 }
