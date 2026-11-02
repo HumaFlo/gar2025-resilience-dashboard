@@ -417,18 +417,38 @@ h1.hero {
 }
 .icegrid {
   display: grid;
-}
-@media (min-width: 1024px) {
-  .icegrid {
-    grid-template-columns: 1fr 1fr;
-  }
+  grid-template-columns: minmax(0, 1fr);
 }
 .icedata {
-  position: relative;
-  z-index: 2;
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
+  display: contents;
+}
+.iceabove { grid-row: 1; }
+.icephoto {
+  grid-row: 2;
+  min-width: 0;
+}
+.icebelow { grid-row: 3; }
+.icewater { display: none; }
+@media (min-width: 1024px) {
+  .icegrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .icedata {
+    position: relative;
+    z-index: 2;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+  }
+  .iceabove,
+  .icebelow,
+  .icewater,
+  .icephoto {
+    grid-row: auto;
+  }
+  .icewater {
+    display: block;
+  }
 }
 @media (min-width: 1024px) {
   .icedata {
@@ -594,13 +614,34 @@ h1.hero {
 }
 .icephoto .plabel {
   position: absolute;
-  right: 0.75rem;
-  top: calc(var(--wl, 50%) + 10px);
+  top: var(--wl, 50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: calc(100% - 1.5rem);
+  padding: 0.25rem 0.5rem;
+  background: rgba(10, 11, 13, 0.9);
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
+  line-height: 1.4;
+  text-align: center;
+  white-space: normal;
+}
+.icephoto .submerged-label {
+  position: absolute;
+  top: calc(var(--wl, 50%) + 2rem);
+  left: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background: rgba(10, 16, 24, 0.65);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
 }
 
 /* ---------- scale ---------- */
@@ -2216,7 +2257,7 @@ footer {
               <p class="icebig"><span data-count="202" data-decimals="0" data-prefix="$" data-suffix="B">$202B</span><span class="per">/ yr</span></p>
               <p class="icecap">Damage to buildings, infrastructure, and assets reported through national loss databases and the Sendai Framework Monitor. 8.8% of the true cost.</p>
             </div>
-            <div class="icewater" id="iceberg-divider"><span>WATERLINE · OFFICIAL REPORTING STOPS HERE</span></div>
+            <div class="icewater" id="iceberg-divider"><span>WATERLINE · OFFICIAL LOSSES END</span></div>
             <div class="icebelow">
               <p class="tag alertText">Below the waterline · indirect &amp; cascading</p>
               <p class="icebig alertText"><span data-count="2.1" data-decimals="1" data-prefix="$" data-suffix="T">$2.1T</span><span class="per">/ yr</span></p>
@@ -2254,7 +2295,8 @@ footer {
             <div class="shade"></div>
             <div class="wl"></div>
             <div class="abyss"></div>
-            <span class="plabel">WATERLINE · OFFICIAL REPORTING STOPS HERE</span>
+            <span class="plabel">WATERLINE · OFFICIAL LOSSES END</span>
+            <span class="submerged-label">SUBMERGED · 91.2% OF TRUE COST</span>
           </div>
         </div>
       </div>
