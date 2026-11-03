@@ -413,7 +413,6 @@ h1.hero {
   margin-top: 5rem;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--border);
 }
 .icegrid {
   display: grid;
@@ -487,6 +486,21 @@ h1.hero {
   }
   .icebelow {
     padding-top: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .iceabove {
+    flex: 0 0 23%;
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .iceabove .icebig {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+  .iceabove .icecap {
+    margin-top: 0.5rem;
   }
 }
 .icebig {
@@ -564,7 +578,7 @@ h1.hero {
 .icephoto {
   position: relative;
   height: 22rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  --wl: 23%;
 }
 @media (min-width: 640px) {
   .icephoto {
@@ -575,8 +589,6 @@ h1.hero {
   .icephoto {
     height: auto;
     min-height: 840px;
-    border-top: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 .icephoto img {
@@ -2950,23 +2962,6 @@ var yo={},mo={};var xo,_o=function(){function t(t,e,n){var i=this;this._sleepAft
     growables.forEach(function (el) { gio.observe(el); });
   } else {
     growables.forEach(function (el) { el.classList.add("in"); });
-  }
-
-  /* ---------- iceberg waterline ---------- */
-  var panel = $("#iceberg-panel");
-  var divider = $("#iceberg-divider");
-  if (panel && divider && "ResizeObserver" in window) {
-    var measure = function () {
-      var lg = window.matchMedia("(min-width: 1024px)").matches;
-      if (!lg) { panel.style.setProperty("--wl", "50%"); return; }
-      var pr = panel.getBoundingClientRect();
-      var dr = divider.getBoundingClientRect();
-      panel.style.setProperty("--wl", Math.round(dr.top - pr.top) + "px");
-    };
-    var robs = new ResizeObserver(measure);
-    robs.observe(panel);
-    window.addEventListener("resize", measure);
-    measure();
   }
 
   /* ---------- playbooks ---------- */
