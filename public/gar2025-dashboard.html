@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GAR 2025 · Resilience Pays · Policy Intelligence Dashboard</title>
-<meta name="description" content="Situation-room view of the UNDRR Global Assessment Report 2025. Direct losses of $202B versus a true cost of $2.3T per year, three compounding spirals, the protection gap, and the benefit-cost case for resilience. Single-file build; deployable on GitHub Pages.">
+<meta name="description" content="Situation-room view of the UNDRR Global Assessment Report 2025. Direct losses of $202B versus a true cost of $2.3T per year, three compounding spirals, the protection gap, and the benefit-cost case for resilience.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%230a0b0d%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%226%22%20fill%3D%22%23e5484d%22%2F%3E%3C%2Fsvg%3E">
 <style>/* ============================================================
    GAR 2025 · Resilience Pays — single-file dashboard stylesheet
@@ -1847,6 +1847,30 @@ footer {
   line-height: 1.6;
   color: var(--muted);
 }
+.footmeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+@media (min-width: 640px) {
+  .footmeta {
+    align-items: flex-end;
+  }
+}
+.page-views {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  text-align: right;
+}
+.page-views img {
+  display: block;
+  width: auto;
+  height: 1.6em;
+}
 .footlink {
   font-family: var(--mono);
   font-size: 11px;
@@ -2795,11 +2819,45 @@ footer {
   <div class="wrap footrow">
     <div>
       <p style="margin:0;display:flex;align-items:baseline;gap:.625rem"><span class="y" style="font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--alert)">GAR 2025</span><span style="width:1px;height:12px;background:var(--border);display:inline-block" aria-hidden="true"></span><span style="font-size:14px;font-weight:600;letter-spacing:-.01em">Resilience Pays</span></p>
-      <p>An intelligence layer on the UNDRR Global Assessment Report 2025 (253 pages, 7 chapters). All figures attribute to their source chapters; the report itself is authoritative. Single-file build: no network requests, deployable on GitHub Pages.</p>
+      <p>An intelligence layer on the UNDRR Global Assessment Report 2025 (253 pages, 7 chapters). All figures attribute to their source chapters; the report itself is authoritative.</p>
     </div>
-    <a class="footlink" href="https://www.undrr.org/gar" target="_blank" rel="noopener noreferrer">undrr.org/gar</a>
+    <div class="footmeta">
+      <a class="footlink" href="https://humaflo.github.io/#feedback">HumaFlo feedback</a>
+      <p id="page-views" class="page-views">
+        <span id="page-views-status" role="status" aria-live="polite">Views loading…</span>
+        <img
+          src="https://hits.sh/humaflo.github.io.svg?label=Views&amp;labelColor=78716c&amp;color=57534e"
+          alt="Views counter showing the HumaFlo homepage visit total"
+          width="60"
+          height="20"
+          loading="eager"
+          decoding="async"
+          referrerpolicy="no-referrer"
+          hidden
+        >
+      </p>
+    </div>
   </div>
 </footer>
+<script>
+  (() => {
+    const status = document.querySelector('#page-views-status');
+    const badge = document.querySelector('#page-views img');
+    if (!status || !badge) return;
+
+    badge.addEventListener('load', () => status.remove(), { once: true });
+    badge.addEventListener(
+      'error',
+      () => {
+        badge.hidden = true;
+        status.textContent = 'Views unavailable';
+        console.error("Unable to load HumaFlo's hosted view counter.");
+      },
+      { once: true }
+    );
+    badge.hidden = false;
+  })();
+</script>
 <script>
 /*
 * Licensed to the Apache Software Foundation (ASF) under one

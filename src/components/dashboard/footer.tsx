@@ -1,10 +1,29 @@
 "use client";
 
+import { useEffect } from "react";
 import { reportMeta } from "@/lib/gar-data";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export function DashboardFooter() {
+  useEffect(() => {
+    const status = document.querySelector<HTMLElement>("#page-views-status");
+    const badge = document.querySelector<HTMLImageElement>("#page-views img");
+    if (!status || !badge) return;
+
+    badge.addEventListener("load", () => status.remove(), { once: true });
+    badge.addEventListener(
+      "error",
+      () => {
+        badge.hidden = true;
+        status.textContent = "Views unavailable";
+        console.error("Unable to load HumaFlo's hosted view counter.");
+      },
+      { once: true }
+    );
+    badge.hidden = false;
+  }, []);
+
   return (
     <footer className="mt-auto border-t border-border">
       <div className="mx-auto max-w-[1180px] px-5 py-8 sm:px-8">
@@ -79,9 +98,30 @@ export function DashboardFooter() {
             © 2025 UNDRR. Source material licensed under CC BY-NC 3.0 IGO. This dashboard is an analytical
             derivative, not an official UNDRR product.
           </p>
-          <p className="text-[11px] text-muted-foreground">
-            {reportMeta.callToAction}
-          </p>
+          <div className="flex flex-col items-start gap-2 sm:items-end">
+            <a
+              href="https://humaflo.github.io/#feedback"
+              className="text-[11px] text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+            >
+              HumaFlo feedback
+            </a>
+            <p id="page-views" className="flex items-center gap-2 text-[11px] text-muted-foreground">
+              <span id="page-views-status" role="status" aria-live="polite">
+                Views loading…
+              </span>
+              <img
+                src="https://hits.sh/humaflo.github.io.svg?label=Views&labelColor=78716c&color=57534e"
+                alt="Views counter showing the HumaFlo homepage visit total"
+                width="60"
+                height="20"
+                loading="eager"
+                decoding="async"
+                referrerPolicy="no-referrer"
+                hidden
+                className="h-4 w-auto"
+              />
+            </p>
+          </div>
         </div>
       </div>
     </footer>
