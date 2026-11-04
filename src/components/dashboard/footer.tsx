@@ -99,6 +99,7 @@ export function DashboardFooter() {
             derivative, not an official UNDRR product.
           </p>
           <div className="flex flex-col items-start gap-2 sm:items-end">
+            <p className="text-[11px] text-muted-foreground">{reportMeta.callToAction}</p>
             <a
               href="https://humaflo.github.io/#feedback"
               className="text-[11px] text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
