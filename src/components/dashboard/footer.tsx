@@ -94,10 +94,13 @@ export function DashboardFooter() {
         </div>
 
         <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-6 sm:flex-row sm:items-center">
-          <p className="text-[11px] text-muted-foreground">
-            © 2025 UNDRR. Source material licensed under CC BY-NC 3.0 IGO. This dashboard is an analytical
-            derivative, not an official UNDRR product.
-          </p>
+          <div className="space-y-2">
+            <p className="text-[11px] text-muted-foreground">
+              © 2025 UNDRR. Source material licensed under CC BY-NC 3.0 IGO. This dashboard is an analytical
+              derivative, not an official UNDRR product.
+            </p>
+            <p className="text-[11px] text-muted-foreground">{reportMeta.callToAction}</p>
+          </div>
           <div className="flex flex-col items-start gap-2 sm:items-end">
             <a
               href="https://humaflo.github.io/#feedback"
